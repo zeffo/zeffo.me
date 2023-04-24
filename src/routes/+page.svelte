@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Navbar from '../components/Nav.svelte'
+</script>
+
+<Navbar />
+
+<style>
+    p {
+        text-align: center;
+    }
+</style>
+
+<p>
+    Hello there!
+    I ❤️ automation, concurrent programming and Star Wars.
+    You can find me on Discord and GitHub.
+</p>

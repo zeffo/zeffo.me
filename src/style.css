@@ -1,0 +1,21 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono');
+
+* {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 19px;
+}
+
+body {
+    background-color: var(--ctp-mocha-pink);
+}
+
+h1 {
+    font-size: 30px;
+    color: var(--ctp-mocha-base)
+}
+
+p {
+    color: var(--ctp-mocha-base);
+}
+
