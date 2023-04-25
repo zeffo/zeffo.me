@@ -1,5 +1,5 @@
 <script>
-	import Navbar from '../components/Nav.svelte'
+	import Nav from '../components/Nav.svelte'
     import Footer from '../components/Footer.svelte';
     let site_info = [
         ["font", "https://fonts.google.com/specimen/Ubuntu+Mono", "ubuntu mono", "--ctp-latte-red"],
@@ -9,7 +9,7 @@
     ]
 </script>
 
-<Navbar />
+<Nav />
 
 <style>
     p {
