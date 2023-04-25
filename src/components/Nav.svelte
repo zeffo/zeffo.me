@@ -1,5 +1,5 @@
 <script>
-    let pages = { "/": "home", "/projects": "projects", "/animals": "animals" };
+    let pages = { "/": "me", "/projects": "projects", "/animals": "animals" };
     import { page } from '$app/stores';
     let url = $page.url.pathname;
 
@@ -11,17 +11,22 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 30px;
         justify-content: center;
         align-items: center;
+        margin-top: 10px
     }
 
     .nav-link {
-        color: var(--ctp-latte-pink);
+        font-size: 25px;
+        text-decoration: none;
     }
 
     .active {
-        color: var(--ctp-latte-lavender);
+        color: var(--ctp-latte-pink);
+        padding: 5px;
+        text-decoration: underline;
+        text-align: center;
     }
 
     .nav-brand {

@@ -6,8 +6,10 @@
     font-size: 19px;
 }
 
+
 body {
     background-color: var(--ctp-mocha-pink);
+    margin: 0; 
 }
 
 h1 {
@@ -19,3 +21,18 @@ p {
     color: var(--ctp-mocha-base);
 }
 
+a {
+    color: var(--ctp-latte-mauve);
+}
+
+a:hover {
+    text-shadow: 0 0 3px;
+}
+
+aman {
+    font-style: italic;
+}
+
+aman::before {
+    content: 'aman';
+}
