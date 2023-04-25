@@ -1,5 +1,9 @@
 <script>
-    let pages = { "/": "me", "/projects": "projects", "/animals": "animals" };
+    let pages = [
+        ["/", "me"],
+        ["/projects", "projects"],
+        ["/animals", "animals"]
+    ]
     import { page } from '$app/stores';
     let url = $page.url.pathname;
 
@@ -20,6 +24,7 @@
     .nav-link {
         font-size: 25px;
         text-decoration: none;
+        color: var(--ctp-latte-mauve);
     }
 
     .active {
@@ -41,14 +46,9 @@
     aman
 </h1>
 <div class="container" id="Nav">
-    {#each Object.entries(pages) as [link, title] }
+    {#each pages as [link, title] }
         <p>
-            <!-- Please let me know if I can do this in one line, with a ternary or such! -->
-            {#if url == link}
-                <a href={link} class="nav-link active"> {title} </a>
-            {:else}
-                <a href={link} class="nav-link"> {title} </a>
-            {/if}
+            <a href={link} class="nav-link" class:active="{link === url}">{title}</a>
         </p>
     {/each}
 </div>

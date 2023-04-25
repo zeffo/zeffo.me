@@ -22,7 +22,7 @@ p {
 }
 
 a {
-    color: var(--ctp-latte-mauve);
+    color: var(--ctp-latte-blue);
 }
 
 a:hover {
@@ -35,4 +35,8 @@ aman {
 
 aman::before {
     content: 'aman';
+}
+
+.text-center {
+    text-align: center;
 }

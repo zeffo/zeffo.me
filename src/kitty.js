@@ -86,12 +86,13 @@
       kittyEl.style.left = `${kittyPosX - 16}px`;
       kittyEl.style.top = `${kittyPosY - 16}px`;
       kittyEl.style.zIndex = "999";
+      kittyEl.toggled = true;
   
       document.body.appendChild(kittyEl);
   
-      document.onmousemove = (event) => {
-        mousePosX = event.clientX;
-        mousePosY = event.clientY;
+      document.onmousedown = (event) => {
+          mousePosX = event.clientX;
+          mousePosY = event.clientY;
       };
   
       window.kittyInterval = setInterval(frame, 100);
@@ -158,7 +159,6 @@
           break;
         default:
           setSprite("idle", 0);
-          console.log(kittyPosX, kittyPosY)
           return;
       }
       idleAnimationFrame += 1;

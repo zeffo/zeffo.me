@@ -1,3 +1,11 @@
+<script>
+    let links = [
+        ["https://discord.com/users/325616103143505932", "discord", "--ctp-mocha-lavender"],
+        ["https://github.com/zeffo", "github", "--ctp-mocha-sky"],
+        ["https://twitter.com/zeffonian", "twitter", "--ctp-mocha-teal"]
+    ];
+</script>
+
 
 <style>
 
@@ -30,8 +38,8 @@
 
 <footer>
     <div class="footer-links">
-        <a href="https://discord.com/users/325616103143505932">discord</a> |
-        <a href="https://github.com/zeffo">github</a> |
-        <a href="https://twitter.com/zeffonian">twitter</a> 
+        {#each links as [link, title, color]}
+            <a href={link} style="color: var({color})">{title}</a>
+        {/each}
     </div>
 </footer>
