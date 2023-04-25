@@ -48,7 +48,8 @@
 </style>
 <div class="container">
     <p>
-        ~ animals ~      
+        ~ animals ~  <br><br>
+        a few of the cats and dogs i've rescued and rehabilitated 
     </p>
     <div class="icons">
         {#each images as image}

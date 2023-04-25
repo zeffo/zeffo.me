@@ -63,7 +63,9 @@
 </style>
 <div class="container">
     <p>
-        ~ projects ~      
+        ~ projects ~  <br><br>
+        (you can also check out my 
+        <a href="https://github.com/zeffo">github</a>)
     </p>
     <div class="cards">
         {#each cards as [title, link, desc, color]}
