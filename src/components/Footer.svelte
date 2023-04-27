@@ -34,6 +34,10 @@
         gap: 30px;
     }
 
+    a {
+        text-decoration: none;
+    }
+
 </style>
 
 <footer>
