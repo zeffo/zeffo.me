@@ -3,9 +3,9 @@
     import Footer from '../../components/Footer.svelte';
 
     let cards = [
-        ['hk', 'https://github.com/zeffo/HK', 'a multipurpose discord bot', "--ctp-mocha-red"],
-        ['ambilight', 'https://youtu.be/_VMQRKT320A', 'synchronize monitor colors with an ARGB strip in real time (very pretty)', "--ctp-mocha-peach"],
-        ['zeffo.me', '/', 'this website, made with svelte', "--ctp-mocha-yellow"],
+        ['hk', 'https://github.com/zeffo/HK', 'a multipurpose discord bot themed on star wars', "--ctp-mocha-red"],
+        ['ambilight', 'https://youtu.be/_VMQRKT320A', 'synchronize monitor colors with an ARGB strip in real time', "--ctp-mocha-peach"],
+        ['zeffo.me', '/', 'this website, made with svelte and hosted on cf pages', "--ctp-mocha-yellow"],
         ['periodico', 'https://www.youtube.com/watch?v=BfJffhaNUBo', 'robot to help newspaper vendors cut down on delivery times', "--ctp-mocha-green"],
         ['daksh', 'https://github.com/zeffo/daksh', 'utilities to grab audio from youtube and build music players', "--ctp-mocha-blue"]
     ]
@@ -48,7 +48,7 @@
         width: 250px;
         height: 120px;
         text-align: left;
-        padding: 0 20px 20px;
+        padding: 0 20px 30px;
     }
 
     .card:hover {
