@@ -43,7 +43,7 @@
         text-decoration: none;
         background-color: var(--ctp-mocha-base);
         color: var(--ctp-mocha-text);
-        border: 2px solid;
+        border: 4px solid;
         border-radius: 10px;
         width: 250px;
         height: 120px;
