@@ -7,6 +7,10 @@
     import { page } from '$app/stores';
     let url = $page.url.pathname;
 
+    function toggle() {
+	    window.document.body.classList.toggle('dark-mode');
+    }
+
 </script>
 
 <style>
@@ -29,7 +33,6 @@
 
     .active {
         color: var(--ctp-latte-pink);
-        padding: 5px;
         text-decoration: underline;
         text-align: center;
     }
@@ -40,11 +43,29 @@
         text-align: center;
     }
 
+    button {
+        background-color: var(--ctp-mocha-pink);
+        border: 0;
+        padding: 0;
+        margin: 0;
+        height: 0;
+    }
+
+    :global(body.dark-mode) button {
+        color: var(--ctp-mocha-pink);
+    }
+
+
 </style>
 
 <h1 class="nav-brand">
-    aman
+    <button on:click={toggle} id="toggler">
+        <h1>
+            aman
+        </h1>
+    </button>
 </h1>
+
 <div class="container" id="Nav">
     {#each pages as [link, title] }
         <p>

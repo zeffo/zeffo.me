@@ -9,17 +9,20 @@
 
 body {
     background-color: var(--ctp-mocha-pink);
+	color: var(--ctp-mocha-base);
+	transition: background-color 0.5s;
     margin: 0; 
+}
+
+body.dark-mode {
+	background-color: var(--ctp-mocha-base);
+	color: var(--ctp-mocha-pink);
 }
 
 h1 {
     font-size: 30px;
-    color: var(--ctp-mocha-base)
 }
 
-p {
-    color: var(--ctp-mocha-base);
-}
 
 a {
     color: var(--ctp-latte-blue);
