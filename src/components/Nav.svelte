@@ -11,6 +11,8 @@
 	    window.document.body.classList.toggle('dark-mode');
     }
 
+
+
 </script>
 
 <style>
@@ -43,27 +45,34 @@
         text-align: center;
     }
 
-    button {
-        background-color: var(--ctp-mocha-pink);
-        border: 0;
-        padding: 0;
-        margin: 0;
-        height: 0;
+
+    #Toggler {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background-color: var(--ctp-latte-pink);
+        color: var(--ctp-mocha-base);
+        border: 2px solid var(--ctp-mocha-base);
+        border-radius: 10px;
     }
 
     :global(body.dark-mode) button {
         color: var(--ctp-mocha-pink);
+        background-color: var(--ctp-mocha-base);
+        border-color: var(--ctp-latte-pink);
     }
 
 
 </style>
 
+<button id="Toggler" on:click={toggle}>
+    theme
+</button>
+
+<br>
+
 <h1 class="nav-brand">
-    <button on:click={toggle} id="toggler">
-        <h1>
-            aman
-        </h1>
-    </button>
+    aman
 </h1>
 
 <div class="container" id="Nav">
