@@ -42,7 +42,7 @@
         <br><br><br>
         website stuff: <br>
         {#each site_info as [field, link, title, color]}
-            <li>{field}: <a href={link} style="color: var({color})">{title}</a></li>
+            - {field}: <a href={link} style="color: var({color})">{title}</a><br>
         {/each}
     </p>
 </div>
