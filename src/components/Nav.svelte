@@ -56,7 +56,7 @@
         border-radius: 10px;
     }
 
-    :global(body.dark-mode) button {
+    :global(body.dark-mode) #Toggler {
         color: var(--ctp-mocha-pink);
         background-color: var(--ctp-mocha-base);
         border-color: var(--ctp-latte-pink);
