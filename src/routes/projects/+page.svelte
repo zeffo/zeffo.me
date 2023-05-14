@@ -36,7 +36,7 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 50px;
-        max-width: 1000px;
+        max-width: 1200px;
     }
 
     div > .card {
@@ -45,20 +45,20 @@
         color: var(--ctp-mocha-text);
         border: 4px solid;
         border-radius: 10px;
-        width: 250px;
-        height: 110px;
+        width: 280px;
+        height: 150px;
         text-align: left;
-        padding: 0 20px 30px;
     }
 
     .card-title {
-        margin-bottom: 10px;
+        margin: 0;
+        padding: 15px;
     }
 
     .card-body {
         text-align: left;
         margin: 0;
-        padding: 0;
+        padding: 0 15px 0;
     }
 
     .card:hover {
