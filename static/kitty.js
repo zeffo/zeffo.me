@@ -81,7 +81,7 @@
       kittyEl.style.height = "32px";
       kittyEl.style.position = "fixed";
       kittyEl.style.pointerEvents = "none";
-      kittyEl.style.backgroundImage = "url('./kitty.gif')";
+      kittyEl.style.backgroundImage = "url('/kitty.gif')";
       kittyEl.style.imageRendering = "pixelated";
       kittyEl.style.left = `${kittyPosX - 16}px`;
       kittyEl.style.top = `${kittyPosY - 16}px`;

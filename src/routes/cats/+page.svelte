@@ -1,6 +1,4 @@
 <script>
-    import Footer from '../../components/Footer.svelte';
-    import Nav from '../../components/Nav.svelte';
     const dir = import.meta.glob("/static/animals/*", { as: 'url'});
     let images = [];
     for (let path in dir) {
@@ -10,21 +8,11 @@
 
 </script>
 
-<Nav />
-
 <style>
     p {
         text-align: center;
         line-height: 20px;
         padding: 20px;
-    }
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-bottom:100px;
     }
 
     .icons {
@@ -45,11 +33,24 @@
         border: solid 2px;
     }
 
+    .contents {
+        justify-content: flex-start;
+        gap: 50px;
+        padding-bottom: 100px;
+    }
+
+    .text-cats {
+        text-align: left;
+        max-width: 800px;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
 </style>
-<div class="container">
-    <p>
-        ~ animals ~  <br><br>
-        a few of the cats and dogs i've rescued and rehabilitated 
+<div class="contents">
+    <p class="text-cats">
+        Here are a few of the animals I've helped rescue and rehome ~ <br><br>
+        <span style="color: var(--overlay1)">(i am definitely a cat person)</span>
     </p>
     <div class="icons">
         {#each images as image}
@@ -57,5 +58,3 @@
         {/each}
     </div>
 </div>
-
-<Footer />

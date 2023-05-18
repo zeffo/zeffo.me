@@ -1,50 +1,43 @@
 <script>
     let links = [
-        ["https://discord.com/users/325616103143505932", "discord", "--ctp-mocha-lavender"],
-        ["https://github.com/zeffo", "github", "--ctp-mocha-sky"],
-        ["https://twitter.com/zeffonian", "twitter", "--ctp-mocha-teal"]
+        ["https://discord.com/users/325616103143505932", "discord", "--teal"],
+        ["https://github.com/zeffo", "github", "--sky"],
+        ["https://twitter.com/zeffonian", "twitter", "--sapphire"]
     ];
 </script>
 
-
 <style>
 
-    footer {
-        width: 100%;
-        height: 70px;
-
-        background-color: var(--ctp-mocha-mantle);
-        color: var(--ctp-mocha-pink);
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
+    #Footer {
+        /* margin-top: auto; */
 
         position: fixed;
         bottom: 0;
+
+        width: 100%;
+        padding: 25px 0;
+        background-color: var(--crust);
     }
 
-    .footer-links{
+    .footer-links {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 30px;
+        gap: 50px;
     }
 
-    a {
+    .footer-link {
         text-decoration: none;
     }
 
 </style>
 
-<footer>
+
+<footer id="Footer">
     <div class="footer-links">
         {#each links as [link, title, color]}
-            <a href={link} style="color: var({color})">{title}</a>
+            <a href={link} class="footer-link" style="color: var({color})">{title}</a>
         {/each}
     </div>
 </footer>
-

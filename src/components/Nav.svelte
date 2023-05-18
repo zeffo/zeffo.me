@@ -1,84 +1,84 @@
 <script>
     let pages = [
-        ["/", "me"],
-        ["/projects", "projects"],
-        ["/animals", "animals"]
+        ["/", "home"],
+        ["/tech", "tech"],
+        ["/cats", "cats"]
     ]
+
     import { page } from '$app/stores';
-    let url = $page.url.pathname;
+    $: url = $page.url.pathname;
 
-    function toggle() {
-	    window.document.body.classList.toggle('dark-mode');
+    function toggleTheme() {
+        let link = document.getElementById("Theme")
+        let theme = (link.data_theme == 'dark') ? "light" : "dark";
+        link.href = `/themes/${theme}.css`
+        link.data_theme = theme;
+        localStorage.setItem("theme", theme);
     }
-
-
 
 </script>
 
 <style>
     #Nav {
+        top: 0;
         width: 100%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        margin-top: 10px
+        justify-content: center;
+
+    }
+
+    .nav-brand {
+        color: var(--pink);
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
     }
 
     .nav-link {
         font-size: 25px;
+        color: var(--mauve);
         text-decoration: none;
-        color: var(--ctp-latte-mauve);
     }
 
     .active {
-        color: var(--ctp-latte-pink);
+        color: var(--lavender);
         text-decoration: underline;
-        text-align: center;
     }
 
-    .nav-brand {
-        margin-bottom: 0;
-        padding: 0;
-        text-align: center;
-    }
-
-
-    #Toggler {
+    #ThemeSwitch {
         position: absolute;
-        right: 5px;
-        top: 5px;
-        background-color: var(--ctp-latte-pink);
-        color: var(--ctp-mocha-base);
-        border: 2px solid var(--ctp-mocha-base);
+        top: 15px;
+        right: 15px;
         border-radius: 10px;
+        border: 2px solid var(--mantle);
+        color: var(--subtext0);
+        background-color: var(--surface0);
     }
-
-    :global(body.dark-mode) #Toggler {
-        color: var(--ctp-mocha-pink);
-        background-color: var(--ctp-mocha-base);
-        border-color: var(--ctp-latte-pink);
-    }
-
 
 </style>
 
-<button id="Toggler" on:click={toggle}>
-    theme
-</button>
 
-<br>
-
-<h1 class="nav-brand">
-    aman
-</h1>
-
-<div class="container" id="Nav">
-    {#each pages as [link, title] }
-        <p>
-            <a href={link} class="nav-link" class:active="{link === url}">{title}</a>
-        </p>
-    {/each}
-</div>
+<nav id="Nav">
+    <button id="ThemeSwitch" on:click={toggleTheme}>
+        theme
+    </button>
+    <h1 class="nav-brand">
+        aman
+    </h1>
+    <div class="nav-links">
+        {#each pages as [link, title] }
+            <p>
+                <a href={link} class="nav-link" class:active="{link === url}">{title}</a>
+            </p>
+        {/each}
+    </div>
+</nav>

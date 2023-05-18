@@ -3,12 +3,43 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<link rel="stylesheet" href="%sveltekit.assets%/style.css" />
 		<meta name="viewport" content="width=device-width" />
+
+		<link rel="stylesheet" href="/style.css" />
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<script src="%sveltekit.assets%/kitty.js"></script>
+		<script src="/kitty.js"></script>
 		<div style="display: contents">%sveltekit.body%</div>
+		<script type="module">
+
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+				let link = document.getElementById("Theme")
+				if (link) {
+					let theme = event.matches ? "dark" : "light";
+					link.href = `/themes/${theme}.css`
+					link.data_theme = theme;
+				}
+			});
+
+			let theme = localStorage.getItem('theme');
+			let default_theme = 'dark';
+			if (!theme) {
+				if (window.matchMedia) {
+					theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				} else {
+					localStorage.setItem('theme', default_theme);
+					theme = default_theme;
+				}
+			}
+
+			let link = document.createElement('link');
+			link.rel = 'stylesheet'
+			link.id = "Theme"
+			link.href = `/themes/${theme}.css`
+			link.data_theme = theme;
+			document.head.append(link)
+			
+		</script>
 	</body>
 </html>

@@ -1,50 +1,64 @@
 <script>
-	import Nav from '../components/Nav.svelte'
-    import Footer from '../components/Footer.svelte';
     let site_info = [
-        ["font", "https://fonts.google.com/specimen/Ubuntu+Mono", "ubuntu mono", "--ctp-latte-red"],
-        ["colors", "https://github.com/catppuccin/catppuccin", "catppuccin", "--ctp-latte-maroon"],
-        ["framework", "https://svelte.dev", "svelte", "--ctp-latte-peach"],
-        ["hosted on", "https://developers.cloudflare.com/pages", "cf pages", "--ctp-latte-yellow"]
+        ["font", "https://fonts.google.com/specimen/Ubuntu+Mono", "ubuntu mono", "--red"],
+        ["colors", "https://github.com/catppuccin/catppuccin", "catppuccin", "--maroon"],
+        ["framework", "https://svelte.dev", "svelte", "--peach"],
+        ["hosted on", "https://developers.cloudflare.com/pages", "cf pages", "--yellow"]
     ]
 </script>
 
-<Nav />
-
 <style>
-    p {
-        text-align: left;
-        line-height: 20px;
-        margin: 0;
-        padding: 0;
+
+    aman {
+        color: var(--pink)
     }
 
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 30px;
-        padding-bottom: 100px;
+    aman::before {
+        content: 'Aman';
+    }
+
+    .home-text {
+        text-align: left;
+        line-height: 25px;
+    }
+
+    a {
+        color: var(--rosewater)
+    }
+
+    highlight {
+        color: var(--green)
+    }
+
+    .site-info {
+        color: var(--subtext1)
+    }
+
+    .contents {
+        justify-content: flex-start;
     }
 
 </style>
-<div class="container">
-    <p>  
-        ~ hello there! i'm <aman /> ~ <br><br>
-        i like programming (especially automation and concurrency). <br>
-        you can see my projects 
-        <a href="/projects">here</a>. <br><br>
-        i also like rescuing animals. you can see some of them 
-        <a href="/animals">here</a>.<br><br>
-        you can contact me on <a href="https://discord.com/users/325616103143505932">discord</a> or send me an
-        <a href="mailto:aman@zeffo.me">email</a>.
+
+<div class="contents">
+    <p class="home-text">
+        Hello there! I'm <aman />.
+        <br><br>
+        I like <highlight>programming</highlight> (especially automation and concurrency). <br>
+        you can see my projects
+        <a href="/tech">here</a>. <br><br>
+        I also like <highlight>rescuing animals</highlight>. You can see some of them
+        <a href="/cats">here</a>.<br><br>
+        You can <highlight>contact me</highlight> on <a href="https://discord.com/users/325616103143505932">Discord</a> or send me an
+        <a href="mailto:aman@zeffo.me">Email</a>.
         <br><br><br>
-        website stuff: <br>
-        {#each site_info as [field, link, title, color]}
-            - {field}: <a href={link} style="color: var({color})">{title}</a><br>
-        {/each}
+
+        <span class="site-info">
+            Website Stuff: <br>
+            {#each site_info as [field, link, title, color]}
+                - {field}: <a href={link} style="color: var({color})">{title}</a><br>
+            {/each}
+        </span>
     </p>
 </div>
 
-<Footer />
