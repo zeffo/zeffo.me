@@ -34,3 +34,7 @@ body {
     align-self: center;
     padding: 10px 20px;
 }
+
+p {
+    line-height: 25px;
+}

@@ -19,7 +19,6 @@
 
     .home-text {
         text-align: left;
-        line-height: 25px;
     }
 
     a {
