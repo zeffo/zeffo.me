@@ -9,14 +9,6 @@
 
 <style>
 
-    aman {
-        color: var(--pink)
-    }
-
-    aman::before {
-        content: 'Aman';
-    }
-
     .home-text {
         text-align: left;
     }
@@ -37,11 +29,30 @@
         justify-content: flex-start;
     }
 
+    @keyframes gradient-text {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    aman {
+        animation: gradient-text 3s linear infinite;     
+        -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(right, var(--pink), var(--mauve), var(--red), var(--maroon), var(--peach), var(--yellow), var(--green), var(--teal), var(--sky), var(--sapphire), var(--blue), var(--lavender));
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-size: 200% auto;
+    }
+
+    aman::before {
+        content: 'Aman';
+    }
+
 </style>
 
 <div class="contents">
     <p class="home-text">
-        Hello there! I'm <aman />.
+        Hello there! I'm <aman/>.
         <br><br>
         I like <highlight>programming</highlight> (especially automation and concurrency). <br>
         you can see my projects
