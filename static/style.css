@@ -5,7 +5,8 @@
 * {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 19px;
-    color: var(--text)
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
 }
 
 html, body {

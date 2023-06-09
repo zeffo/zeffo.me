@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-
+		<link id="Theme" rel="stylesheet" href="/themes/dark.css" data_theme="dark"/>
 		<link rel="stylesheet" href="/style.css" />
 		%sveltekit.head%
 	</head>
@@ -22,23 +22,17 @@
 				}
 			});
 
-			let theme = localStorage.getItem('theme');
-			let default_theme = 'dark';
-			if (!theme) {
-				if (window.matchMedia) {
-					theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-				} else {
-					localStorage.setItem('theme', default_theme);
-					theme = default_theme;
-				}
+			let theme = 'dark';
+			if (!theme && window.matchMedia) {
+				theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 			}
 
-			let link = document.createElement('link');
-			link.rel = 'stylesheet'
-			link.id = "Theme"
-			link.href = `/themes/${theme}.css`
-			link.data_theme = theme;
-			document.head.append(link)
+			let link = document.getElementById("Theme");
+			let path = `/themes/${theme}.css`
+			if (path != link.href) {
+				link.href = `/themes/${theme}.css`
+				link.data_theme = theme;
+			}
 			
 		</script>
 	</body>

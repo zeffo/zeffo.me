@@ -13,7 +13,6 @@
         let theme = (link.data_theme == 'dark') ? "light" : "dark";
         link.href = `/themes/${theme}.css`
         link.data_theme = theme;
-        localStorage.setItem("theme", theme);
     }
 
 </script>
