@@ -23,7 +23,7 @@
 			});
 
 			let theme = 'dark';
-			if (!theme && window.matchMedia) {
+			if (window.matchMedia) {
 				theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 			}
 
