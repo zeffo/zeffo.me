@@ -2,10 +2,12 @@
 
     let cards = [
         ['ambilight', 'https://youtu.be/_VMQRKT320A', 'synchronize monitor colors with an ARGB strip in real time', "--peach"],
-        ['hk', 'https://github.com/zeffo/HK', 'a quirky, star wars themed discord bot made for my friends and I', "--red"],
+        ['manzar', 'https://github.com/zeffo/manzar', 'a cat that follows your cursor around, written in rust', "--red"],
         ['zeffo.me', 'https://github.com/zeffo/zeffo.me', 'this website, made with svelte and hosted on cf pages', "--yellow"],
-        ['periodico', 'https://www.youtube.com/watch?v=BfJffhaNUBo', 'robot to help newspaper vendors cut down on delivery times', "--green"],
-        ['daksh', 'https://github.com/zeffo/daksh', 'utilities to grab audio from youtube and build music players', "--blue"]
+        ['hk', 'https://github.com/zeffo/HK', 'star wars themed discord bot that does some cool stuff. probably my first ever python project', "--green"],
+        ['dotfiles', 'https://github.com/zeffo/dotfiles', 'my arch (hyprland) rice dotfiles, screenshots included', "--mauve"],
+        ['periodico', 'https://www.youtube.com/watch?v=BfJffhaNUBo', 'robot to help newspaper vendors cut down on delivery times (very old)', "--blue"],
+        ['webasi', 'https://github.com/zeffo/webasi', 'exhibition website for the art society of india', "--teal"]
     ]
 
 </script>
@@ -33,14 +35,15 @@
         height: 120px;
         text-align: left;
         padding: 20px;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: transform 0.3s;
     }
 
     .card:hover {
         text-shadow: none;
+        transform: scale(1.18); 
     }
 
     .card-title {
@@ -61,6 +64,7 @@
     .tech-text {
         text-align: left;
         max-width: 800px;
+        margin-bottom: 0;
     }
 
     .contents {
@@ -72,7 +76,7 @@
 
 <div class="contents">
     <p class="tech-text">
-        I like programming (mostly in python and rust), specifically concurrent programming, automation, databases and a tiny bit of robotics.
+        ♥  python, rust, linux ♥  <br>
     </p>
     <div class="cards">
         {#each cards as [title, link, desc, color]}

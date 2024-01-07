@@ -14,7 +14,11 @@
     }
 
     a {
-        color: var(--rosewater)
+        color: var(--blue)
+    }
+
+    a:hover {
+        text-shadow: 0 0 2px;
     }
 
     highlight {
@@ -59,8 +63,8 @@
         <a href="/tech">here</a>. <br><br>
         I also like <highlight>rescuing animals</highlight>. You can see some of them
         <a href="/cats">here</a>.<br><br>
-        You can <highlight>contact me</highlight> on <a href="https://discord.com/users/325616103143505932">Discord</a> or send me an
-        <a href="mailto:aman@zeffo.me">Email</a>.
+        You can <highlight>contact me</highlight> on <a href="https://discord.com/users/325616103143505932">discord</a> or send me an
+        <a href="mailto:aman@zeffo.me">email</a>.
         <br><br><br>
 
         <span class="site-info">
