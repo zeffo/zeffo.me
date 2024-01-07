@@ -2,7 +2,7 @@
     const dir = import.meta.glob("/static/animals/*", { as: 'url'});
     let images = [];
     for (let path in dir) {
-        path = path.split("/").slice(2).join("/")
+        path = "/" + path.split("/").slice(2).join("/")
         images.push(path);
     };
 
