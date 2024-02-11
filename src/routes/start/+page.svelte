@@ -1,0 +1,237 @@
+<script>
+    import { onMount } from 'svelte';
+
+    let dev_links = [
+        ["https://github.com", "github"],
+        ["https://dash.cloudflare.com", "cloudflare"],
+        ["http://localhost:8000", "localhost:8000"],
+        ["http://localhost:8080", "localhost:8080"],
+        ["http://localhost:5173", "localhost:5173"]
+    ]
+
+    let social_links = [
+        ["https://reddit.com/r/unixporn", "r/unixporn"],
+    ]
+
+    let misc_links = [
+        ["https://zeffo.me", "me"]
+    ]
+
+    let college_links = [
+        ["https://timetable.sicsr.ac.in", "timetable"]
+    ]
+
+    let colors = [
+        "pink",
+        "red",
+        "maroon",
+        "peach",
+        "yellow",
+        "green",
+        "teal",
+        "sky",
+        "sapphire",
+        "blue",
+        "lavender",
+        "mauve"
+    ]
+
+    onMount(async () => {
+        function showTime() {
+            const date = new Date();
+
+            let today = date.toLocaleString("en", { weekday: "long" });
+            let hour = date.toLocaleString("pl", { hour: "2-digit" }); // use 24h time format
+            let minute = date.toLocaleString("en", { minute: "2-digit" });
+            let second = date.toLocaleString("en", { second: "2-digit" });
+            let day = date.toLocaleString("en", { day: "2-digit" });
+            let month = date.toLocaleString("en", { month: "2-digit" });
+            let year = date.toLocaleString("en", { year: "numeric" });
+
+            minute = addZero(minute);
+            second = addZero(second);
+
+            document.getElementById(
+                "date"
+            ).innerHTML = `${today}, ${hour}:${minute}:${second} | ${day}/${month}/${year}`;
+            setTimeout(showTime, 0);
+        }
+
+        function addZero(i) {
+            if (i.length < 2) i = "0" + i;
+            return i;
+        }
+
+        showTime();
+    });
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono');
+
+    .contents {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+        /* gap: 100px; */
+    }
+
+    .contents:nth-child(1) {
+        align-self: flex-start;
+    }
+
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Dashboard {
+        border: 2px solid var(--lavender);
+        border-radius: 10px;
+        padding: 30px 100px;
+    }
+
+    #Header {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    #Title {
+        font-size: 50px;
+        font-family: "Space Mono";
+        color: var(--pink);
+        margin: 0;
+    }
+
+    #date {
+        color: var(--lavender);
+        font-size: 23px;
+    }
+
+    #Icon {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid var(--lavender);
+    }
+
+
+
+    .colors {
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+
+    .catppuccin-color {
+        font-size: 30px;
+    }
+
+
+    #Topics {
+        /* justify-content: space-between; */
+        gap: 100px;
+    }
+
+    .topic {
+        padding: 0 20px 20px 0;
+    }
+
+    .topic-title {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .topic-links {
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+        list-style-type: none; 
+    }
+
+    .topic-links > li > a {
+        text-decoration: none;
+        color: var(--blue);
+        font-size: 20px;
+    }
+
+    .topic-links > li > a:hover {
+        font-style: italic;
+        color: var(--sky);
+        text-decoration: underline;
+    }
+
+    .topic-col {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+
+</style>
+
+<div class="contents">
+    <div id="Dashboard" class="col">
+        <div id="Header" class="row">
+            <div class="col">
+                <h1 id="Title"> Welcome ~ </h1>
+                <span id="date"> _ </span>
+            </div>
+            <img id="Icon" src="animals/rocket.jpg" alt="rocket" />
+        </div>
+        <div id="Topics" class="row">
+            <div class="topic-col col">
+                <div class="topic">
+                    <span class="topic-title" style="color: var(--green)"> dev </span>
+                    <ul class="topic-links">
+                        {#each dev_links as link}
+                            <li><a href="{link[0]}">{link[1]}</a></li>
+                        {/each}
+                    </ul>
+                </div>
+                <div class="topic">
+                    <span class="topic-title" style="color: var(--peach)"> social </span>
+                    <ul class="topic-links">
+                        {#each social_links as link}
+                            <li><a href="{link[0]}">{link[1]}</a></li>
+                        {/each}
+                    </ul>
+                </div>
+            </div>
+            <div class="topic-col col">
+                <div class="topic">
+                    <span class="topic-title" style="color: var(--yellow)"> college </span>
+                    <ul class="topic-links">
+                        {#each college_links as link}
+                            <li><a href="{link[0]}">{link[1]}</a></li>
+                        {/each}
+                    </ul>
+                </div>
+                <div class="topic">
+                    <span class="topic-title" style="color: var(--sapphire)"> misc </span> 
+                    <ul class="topic-links">
+                        {#each misc_links as link}
+                            <li><a href="{link[0]}">{link[1]}</a></li>
+                        {/each}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row colors">
+            {#each colors as color}
+                <span class="catppuccin-color" style="color: var(--{color});">
+                      
+                </span> 
+            {/each}
+        </div>
+    </div>
+    <!-- empty divs -->
+</div>
