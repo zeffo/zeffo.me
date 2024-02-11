@@ -1,6 +1,6 @@
 <script>
     let site_info = [
-        ["font", "https://fonts.google.com/specimen/Ubuntu+Mono", "ubuntu mono", "--red"],
+        ["font", "https://github.com/protesilaos/iosevka-comfy", "iosevka comfy", "--red"],
         ["colors", "https://github.com/catppuccin/catppuccin", "catppuccin", "--maroon"],
         ["framework", "https://svelte.dev", "svelte", "--peach"],
         ["hosted on", "https://developers.cloudflare.com/pages", "cf pages", "--yellow"]
@@ -59,7 +59,7 @@
         Hello there! I'm <aman/>.
         <br><br>
         I like <highlight>programming</highlight> (especially automation and concurrency). <br>
-        you can see my projects
+        You can see my projects
         <a href="/tech">here</a>. <br><br>
         I also like <highlight>rescuing animals</highlight>. You can see some of them
         <a href="/cats">here</a>.<br><br>

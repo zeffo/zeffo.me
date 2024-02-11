@@ -1,10 +1,16 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono'); */
+
+@font-face {
+  font-family: 'Iosevka Comfy';
+  src: URL('font.ttf') format('truetype');
+}
+
 
 
 * {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 19px;
+    font-family: 'Iosevka Comfy', monospace;
+    font-size: 18px;
     color: var(--text);
     -webkit-tap-highlight-color: transparent;
 }
