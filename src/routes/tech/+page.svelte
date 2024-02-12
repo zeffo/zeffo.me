@@ -74,6 +74,11 @@
 
 </style>
 
+<svelte:head>
+    <meta property="og:description" content="tech stuff" />
+	<meta name="theme-color" content="#94e2d5">
+</svelte:head>
+
 <div class="contents">
     <p class="tech-text">
           python, rust, linux    <br>

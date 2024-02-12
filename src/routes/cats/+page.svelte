@@ -54,6 +54,12 @@
     }
 
 </style>
+
+<svelte:head>
+    <meta property="og:description" content="rescue cats" />
+	<meta name="theme-color" content="#cba6f7">
+</svelte:head>
+
 <div class="contents">
     <p class="text-cats">
         Here are a few of the animals I've helped rescue and rehome ~ <br><br>

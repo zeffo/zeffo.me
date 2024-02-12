@@ -63,6 +63,11 @@
 
 </style>
 
+<svelte:head>
+    <meta property="og:description" content=":3" />
+	<meta name="theme-color" content="#f5c2e7">
+</svelte:head>
+
 <div class="contents">
     <p class="home-text">
         Hello there! I'm <aman/>. 
