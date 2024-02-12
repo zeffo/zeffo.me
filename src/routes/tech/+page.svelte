@@ -58,7 +58,6 @@
 
     .card:hover > h1 {
         text-shadow: 0 0 5px;
-        text-decoration: underline;
     }
 
     .tech-text {
