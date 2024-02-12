@@ -31,6 +31,13 @@
         width: 100px;
         object-fit: cover;
         border: solid 2px;
+        transition: transform 0.3s;
+    }
+
+    .icon:hover {
+        z-index: 2;
+        transform: scale(2);
+        border-color: var(--pink);
     }
 
     .contents {
