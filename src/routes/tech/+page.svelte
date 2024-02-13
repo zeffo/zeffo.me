@@ -80,7 +80,7 @@
 
 <div class="contents">
     <p class="tech-text">
-          python, rust, linux    <br>
+        python, rust, linux &lt3    <br>
     </p>
     <div class="cards">
         {#each cards as [title, link, desc, color]}
