@@ -1,6 +1,6 @@
 <script>
     let site_info = [
-        ["font", "https://github.com/protesilaos/iosevka-comfy", "iosevka comfy", "--red"],
+        ["font", "https://github.com/zeffo/iosevka-pride", "iosevka pride", "--red"],
         ["colors", "https://github.com/catppuccin/catppuccin", "catppuccin", "--maroon"],
         ["framework", "https://svelte.dev", "svelte", "--peach"],
         ["hosted on", "https://developers.cloudflare.com/pages", "cf pages", "--yellow"]
@@ -61,6 +61,10 @@
         /* font-size: smaller; */
     }
 
+    .site-info > a {
+        color: var(--rosewater);
+    }
+
 </style>
 
 <svelte:head>
@@ -82,9 +86,9 @@
         <br><br><br>
 
         <span class="site-info">
-            Website Stuff: <br>
+            <strong> Website Stuff: </strong><br>
             {#each site_info as [field, link, title, color]}
-                - {field}: <a href={link} style="color: var({color})">{title}</a><br>
+                <span style="color: var({color})"> </span> &nbsp;{field}: <a href={link}>{title}</a><br>
             {/each}
         </span>
         <br>

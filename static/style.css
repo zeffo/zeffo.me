@@ -2,15 +2,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono'); */
 
 @font-face {
-  font-family: 'Iosevka Comfy';
+  font-family: 'Iosevka Pride';
   src: URL('font.ttf') format('truetype');
 }
 
 
 
 * {
-    font-family: 'Iosevka Comfy', monospace;
-    font-size: 18px;
+    font-family: 'Iosevka Pride', monospace;
+    font-size: 19px;
     color: var(--text);
     -webkit-tap-highlight-color: transparent;
 }
