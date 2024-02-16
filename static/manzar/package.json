@@ -1,0 +1,14 @@
+{
+  "name": "manzar",
+  "version": "0.1.0",
+  "files": [
+    "manzar_bg.wasm",
+    "manzar.js",
+    "manzar.d.ts"
+  ],
+  "module": "manzar.js",
+  "types": "manzar.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
