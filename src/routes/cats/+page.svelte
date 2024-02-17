@@ -58,6 +58,7 @@
 <svelte:head>
     <meta property="og:description" content="rescue cats" />
 	<meta name="theme-color" content="#cba6f7">
+	<title>aman/cats</title>
 </svelte:head>
 
 <div class="contents">

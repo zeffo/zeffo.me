@@ -69,6 +69,7 @@
 <svelte:head>
     <meta property="og:description" content=":3" />
 	<meta name="theme-color" content="#f5c2e7">
+	<title>aman/home</title>
 </svelte:head>
 
 <div class="contents">

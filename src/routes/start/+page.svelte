@@ -2,15 +2,14 @@
     import { onMount } from 'svelte';
 
     let dev_links = [
-        ["https://github.com", "github"],
-        ["https://dash.cloudflare.com", "cloudflare"],
-        ["http://localhost:8000", "localhost:8000"],
-        ["http://localhost:8080", "localhost:8080"],
-        ["http://localhost:5173", "localhost:5173"]
+        ["http://localhost:8000", "8000"],
+        ["http://localhost:8080", "8080"],
+        ["http://localhost:5173", "5173"],
     ]
 
     let social_links = [
         ["https://reddit.com/r/unixporn", "r/unixporn"],
+        ["https://www.reddit.com/r/queensofleague/", "r/qol"],
     ]
 
     let misc_links = [
@@ -18,7 +17,8 @@
     ]
 
     let college_links = [
-        ["https://timetable.sicsr.ac.in", "timetable"]
+        ["https://timetable.sicsr.ac.in", "timetable"],
+        ["https://teams.microsoft.com", "teams"]
     ]
 
     let colors = [
@@ -133,7 +133,7 @@
     }
 
     .catppuccin-color {
-        font-size: 30px;
+        font-size: 15px;
     }
 
 
@@ -177,6 +177,12 @@
 
 
 </style>
+
+<svelte:head>
+    <meta property="og:description" content="startpage" />
+	<meta name="theme-color" content="##FAB387">
+	<title> aman/start </title>
+</svelte:head>
 
 <div class="contents">
     <div id="Dashboard" class="col">
