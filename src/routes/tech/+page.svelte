@@ -6,7 +6,7 @@
         ['zeffo.me', 'https://github.com/zeffo/zeffo.me', 'this website, made with svelte and hosted on cf pages', "--yellow"],
         ['hk', 'https://github.com/zeffo/HK', 'star wars themed discord bot that does some cool stuff', "--green"],
         ['dotfiles', 'https://github.com/zeffo/dotfiles', 'my arch (hyprland) rice dotfiles, screenshots included', "--mauve"],
-        ['periodico', 'https://www.youtube.com/watch?v=BfJffhaNUBo', 'robot to help newspaper vendors cut down on delivery times (very old)', "--blue"],
+        ['periodico', 'https://www.youtube.com/watch?v=BfJffhaNUBo', 'robot to help newspaper vendors cut down on delivery times', "--blue"],
         ['webasi', 'https://github.com/zeffo/webasi', 'exhibition website for the art society of india', "--teal"]
     ]
 
@@ -54,6 +54,7 @@
 
     .card-body {
         padding-bottom: 20px;
+        font-size: 20px;
     }
 
     .card:hover > h1 {
