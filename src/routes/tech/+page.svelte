@@ -54,7 +54,7 @@
 
     .card-body {
         padding-bottom: 20px;
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .card:hover > h1 {
