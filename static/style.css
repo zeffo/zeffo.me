@@ -10,7 +10,7 @@
 
 * {
     font-family: 'Iosevka Pride', monospace;
-    font-size: 14pt;
+    font-size: 13pt;
     color: var(--text);
     -webkit-tap-highlight-color: transparent;
 }
