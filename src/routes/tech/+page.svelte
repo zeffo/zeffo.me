@@ -62,7 +62,7 @@
     }
 
     .tech-text {
-        text-align: left;
+        text-align: center;
         max-width: 800px;
         margin-bottom: 0;
     }
@@ -70,6 +70,13 @@
     .contents {
         justify-content: flex-start;
         gap: 50px;
+    }
+
+    .resume {
+        color: var(--blue);
+    }
+    .resume:hover {
+        text-shadow: 0 0 5px;
     }
 
 </style>
@@ -82,7 +89,8 @@
 
 <div class="contents">
     <p class="tech-text">
-        python, rust, linux  <br>
+        python, rust, linux   <br>
+        <a href="./cv2.pdf" target="_blank" class="resume">~ view resume</a>
     </p>
     <div class="cards">
         {#each cards as [title, link, desc, color]}

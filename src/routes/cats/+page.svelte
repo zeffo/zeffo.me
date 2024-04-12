@@ -1,5 +1,5 @@
 <script>
-    const dir = import.meta.glob("/static/animals/*", { as: 'url'});
+    const dir = import.meta.glob("/static/animals/*", { query: '?url', import: 'default'});
     let images = [];
     for (let path in dir) {
         path = "/" + path.split("/").slice(2).join("/")
