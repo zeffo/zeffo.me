@@ -49,6 +49,7 @@
         -webkit-background-clip: text;
         background-size: 200% auto;
         font-weight: bold;
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
     }
 
     aman::before {
