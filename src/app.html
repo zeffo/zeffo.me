@@ -1,48 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<link id="Theme" rel="stylesheet" href="/themes/dark.css" data_theme="dark"/>
-		<link rel="stylesheet" href="/style.css" />
-		<meta property="og:title" content="aman" />
-		<meta property="og:type" content="website" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<script type="module">
-      import init from '/manzar/manzar.js';
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      id="Theme"
+      rel="stylesheet"
+      href="/themes/dark.css"
+      data_theme="dark"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta property="og:title" content="aman" />
+    <meta property="og:type" content="website" />
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <script type="module">
+      import init, { start } from "./manzar/manzar.js";
       async function run() {
         await init();
+        await start("./kitty.gif");
       }
-
       run();
     </script>
-		<div style="display: contents">%sveltekit.body%</div>
-		<script type="module">
+    <div style="display: contents">%sveltekit.body%</div>
+    <script type="module">
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+          let link = document.getElementById("Theme");
+          if (link) {
+            let theme = event.matches ? "dark" : "light";
+            link.href = `/themes/${theme}.css`;
+            link.data_theme = theme;
+          }
+        });
 
-			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-				let link = document.getElementById("Theme")
-				if (link) {
-					let theme = event.matches ? "dark" : "light";
-					link.href = `/themes/${theme}.css`
-					link.data_theme = theme;
-				}
-			});
+      let theme = "dark";
+      if (window.matchMedia) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
 
-			let theme = 'dark';
-			if (window.matchMedia) {
-				theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-			}
-
-			let link = document.getElementById("Theme");
-			let path = `/themes/${theme}.css`
-			if (path != link.href) {
-				link.href = `/themes/${theme}.css`
-				link.data_theme = theme;
-			}
-			
-		</script>
-	</body>
+      let link = document.getElementById("Theme");
+      let path = `/themes/${theme}.css`;
+      if (path != link.href) {
+        link.href = `/themes/${theme}.css`;
+        link.data_theme = theme;
+      }
+    </script>
+  </body>
 </html>
