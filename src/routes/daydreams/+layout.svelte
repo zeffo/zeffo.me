@@ -13,9 +13,6 @@
     justify-content: center;
     align-items: center;
   }
-  .contents {
-    justify-content: flex-start;
-  }
 
 </style>
 

@@ -2,7 +2,7 @@
     let links = [
         ["https://discord.com/users/325616103143505932", "discord", "--teal"],
         ["https://github.com/zeffo", "github", "--sky"],
-        ["www.linkedin.com/in/zeffo", "linkedin", "--sapphire"]
+        ["https://www.linkedin.com/in/zeffo", "linkedin", "--sapphire"]
     ];
 </script>
 
