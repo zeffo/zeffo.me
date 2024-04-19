@@ -143,6 +143,7 @@ as well as the [manzar source code](https://github.com/zeffo/manzar).
 ## Results
 
 After 3 weeks of fighting the rust compiler, I got a satisfactory outcome.
-![adding and removing & and * at random until rustc is happy](/blog_assets/add_remove_rustc.png)
+
+<img src="/blog_assets/add_remove_rustc.png" alt="adding and removing & and * at random until rustc is happy" height="400" width="300">
 
 A reactive cat sprite, complete with scratching and sleeping idle animations!
