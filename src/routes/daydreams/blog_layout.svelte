@@ -23,16 +23,10 @@
     }
   }
 
-  
-
-
 </style>
 
 <svelte:head>
   <meta property="og:description" content={ description }/>
-	<meta name="theme-color" content="#89dceb">
-	<title>aman/daydreams</title>
-	<link rel="stylesheet" href="/syntax.css" />
 </svelte:head>
 
 <div class="blog">

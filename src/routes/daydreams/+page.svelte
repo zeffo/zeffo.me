@@ -2,6 +2,10 @@
 	export let data
 </script>
 
+<svelte:head>
+  <meta property="og:description" content="the daydreams blog ~"/>
+</svelte:head>
+
 <!-- Posts -->
 <section>
 	<div class="posts">
