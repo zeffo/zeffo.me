@@ -2,12 +2,12 @@
     let pages = [
         ["/", "home"],
         ["/tech", "tech"],
-        ["/cats", "cats"]
+        ["/cats", "cats"],
+        ["/daydreams", "blog"]
     ]
 
     import { page } from '$app/stores';
     $: url = $page.url.pathname;
-
     function toggleTheme() {
         let link = document.getElementById("Theme")
         let theme = (link.data_theme == 'dark') ? "light" : "dark";
@@ -76,7 +76,7 @@
     <div class="nav-links">
         {#each pages as [link, title] }
             <p>
-                <a href={link} class="nav-link" class:active="{link === url}">{title}</a>
+                <a href={link} class="nav-link" class:active="{link === '/'+url.split('/')[1]}">{title}</a>
             </p>
         {/each}
     </div>

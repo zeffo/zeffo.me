@@ -2,7 +2,7 @@
     let links = [
         ["https://discord.com/users/325616103143505932", "discord", "--teal"],
         ["https://github.com/zeffo", "github", "--sky"],
-        ["https://twitter.com/zeffonian", "twitter", "--sapphire"]
+        ["www.linkedin.com/in/zeffo", "linkedin", "--sapphire"]
     ];
 </script>
 
@@ -17,6 +17,7 @@
         width: 100%;
         padding: 25px 0;
         background-color: var(--crust);
+        margin-top: 50px;
     }
 
     .footer-links {

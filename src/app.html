@@ -17,10 +17,10 @@
   </head>
   <body data-sveltekit-preload-data="hover">
     <script type="module">
-      import init, { start } from "./manzar/manzar.js";
+      import init, { start } from "/manzar/manzar.js";
       async function run() {
         await init();
-        await start("./kitty.gif");
+        await start("/kitty.gif");
       }
       run();
     </script>
