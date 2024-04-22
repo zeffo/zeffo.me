@@ -2,6 +2,7 @@
 
 @font-face {
   font-family: "Iosevka Pride";
+  font-display: "swap";
   src: URL("font.ttf") format("truetype");
 }
 
