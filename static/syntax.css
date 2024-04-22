@@ -10,8 +10,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #ebdbb2; /* fg1 / fg */
-  font-family: monospace;
+  color: var(--yellow); /* fg1 / fg */
   direction: ltr;
   text-align: left;
   white-space: pre;
