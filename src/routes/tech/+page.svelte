@@ -57,6 +57,10 @@
         font-size: 19px;
     }
 
+    .card > h1 {
+        transition: text-shadow 0.3s;
+    }
+
     .card:hover > h1 {
         text-shadow: 0 0 5px;
     }
