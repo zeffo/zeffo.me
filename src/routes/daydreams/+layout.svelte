@@ -1,7 +1,8 @@
 
 <style>
   #daydreams {
-    font-size: 16pt;
+    font-size: 17pt;
+    font-weight: bold;
     color: transparent;
     padding: 40px;
     background-clip: text;
