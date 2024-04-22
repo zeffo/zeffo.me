@@ -12,39 +12,13 @@
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">%sveltekit.body%</div>
-    <!-- <script type="module"> -->
-    <!--   import init, { start } from "/manzar/manzar.js"; -->
-    <!--   async function run() { -->
-    <!--     await init(); -->
-    <!--     await start("/kitty.gif"); -->
-    <!--   } -->
-    <!--   run(); -->
-    <!-- </script> -->
-    <!-- <script type="module"> -->
-    <!--   window -->
-    <!--     .matchMedia("(prefers-color-scheme: dark)") -->
-    <!--     .addEventListener("change", (event) => { -->
-    <!--       let link = document.getElementById("Theme"); -->
-    <!--       if (link) { -->
-    <!--         let theme = event.matches ? "dark" : "light"; -->
-    <!--         link.href = `/themes/${theme}.css`; -->
-    <!--         link.data_theme = theme; -->
-    <!--       } -->
-    <!--     }); -->
-    <!---->
-    <!--   let theme = "dark"; -->
-    <!--   if (window.matchMedia) { -->
-    <!--     theme = window.matchMedia("(prefers-color-scheme: dark)").matches -->
-    <!--       ? "dark" -->
-    <!--       : "light"; -->
-    <!--   } -->
-    <!---->
-    <!--   let link = document.getElementById("Theme"); -->
-    <!--   let path = `/themes/${theme}.css`; -->
-    <!--   if (path != link.href) { -->
-    <!--     link.href = `/themes/${theme}.css`; -->
-    <!--     link.data_theme = theme; -->
-    <!--   } -->
-    <!-- </script> -->
+    <script type="module">
+      import init, { start } from "/manzar/manzar.js";
+      async function run() {
+        await init();
+        await start("/kitty.gif");
+      }
+      run();
+    </script>
   </body>
 </html>
