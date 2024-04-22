@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono");
+/* @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"); */
 
-/* @font-face { */
-/*   font-family: "Iosevka Pride"; */
-/*   font-display: "swap"; */
-/*   src: URL("font.ttf") format("truetype"); */
-/* } */
+@font-face {
+  font-family: "Iosevka Pride";
+  font-display: "swap";
+  src: URL("font.woff2") format("woff2");
+}
 
 * {
-  font-family: "JetBrains Mono", monospace;
+  font-family: monospace, "Iosevka Pride";
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
 }
