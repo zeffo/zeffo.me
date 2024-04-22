@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono");
 
 /* @font-face { */
 /*   font-family: "Iosevka Pride"; */
@@ -7,7 +7,7 @@
 /* } */
 
 * {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
 }
