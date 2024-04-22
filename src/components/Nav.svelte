@@ -52,24 +52,10 @@
         color: var(--lavender);
         text-decoration: underline;
     }
-
-    #ThemeSwitch {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        border-radius: 10px;
-        border: 2px solid var(--mantle);
-        color: var(--subtext0);
-        background-color: var(--surface0);
-    }
-
 </style>
 
 
 <nav id="Nav">
-    <button id="ThemeSwitch" on:click={toggleTheme}>
-        theme
-    </button>
     <h1 class="nav-brand">
         aman
     </h1>
