@@ -19,7 +19,6 @@
 <svelte:head>
 	<meta name="theme-color" content="#89dceb">
 	<title>aman/daydreams</title>
-	<link rel="stylesheet" href="/syntax.css" />
 </svelte:head>
 <div class="daydreams-wrapper">
   <div id="daydreams">daydreams ~</div>
