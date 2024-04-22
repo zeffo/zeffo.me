@@ -9,11 +9,4 @@
 
 <Footer />
 
-<style>
 
-@font-face {
-  font-family: "Iosevka Pride";
-  src: url("/font.woff2") format("woff2");
-  font-display: "swap";
-}
-</style>

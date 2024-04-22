@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
+@font-face {
+  font-family: "Iosevka Pride H";
+  src: url("/font.woff2") format("woff2");
+  font-display: "swap";
+}
+
 * {
-  font-family: "Iosevka Pride", "Ubuntu Mono", monospace;
+  font-family: "Iosevka Pride H", "Ubuntu Mono", monospace;
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
 }
