@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "Iosevka Pride";
+  src: url("/font.woff2") format("woff2");
   font-display: "swap";
-  src: URL("font.woff2") format("woff2");
 }
 
 * {
-  font-family: monospace, "Iosevka Pride";
+  font-family: "Iosevka Pride", monospace;
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
 }
