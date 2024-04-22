@@ -16,6 +16,7 @@
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
     <script type="module">
       import init, { start } from "/manzar/manzar.js";
       async function run() {
@@ -24,7 +25,6 @@
       }
       run();
     </script>
-    <div style="display: contents">%sveltekit.body%</div>
     <script type="module">
       window
         .matchMedia("(prefers-color-scheme: dark)")
