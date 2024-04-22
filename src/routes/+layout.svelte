@@ -7,12 +7,4 @@
 
 <slot />
 
-<style>
-@font-face { 
-    font-family: "Iosevka Pride"; 
-    font-display: "swap"; 
-    src: url("/font.woff2") format("woff2");
-}
-</style>
-
 <Footer />
