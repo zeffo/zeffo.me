@@ -1,10 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono'); */
 
-@font-face {
-  font-family: "Iosevka Pride";
-  font-display: "swap";
-  src: URL("font.ttf") format("truetype");
-}
+/* @font-face { */
+/*   font-family: "Iosevka Pride"; */
+/*   font-display: "swap"; */
+/*   src: URL("font.ttf") format("truetype"); */
+/* } */
 
 * {
   font-family: "Iosevka Pride", monospace;
