@@ -16,7 +16,7 @@
 
   .wrap {
     @media (max-width: 800px) {
-      max-width: 40ch;
+      max-width: 45ch;
     }
     @media (min-width: 800px) {
       max-width: 80ch;

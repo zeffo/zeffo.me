@@ -64,6 +64,10 @@ p {
     background-color: var(--crust);
     padding: 2px;
   }
+  img {
+    object-fit: scale-down;
+    max-width: 100%;
+  }
 }
 
 :root {
@@ -128,7 +132,7 @@ p {
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: var(--yellow); /* fg1 / fg */
+  color: var(--text); /* fg1 / fg */
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -203,7 +207,7 @@ pre[class*="language-"] {
 .token.tag .punctuation,
 .token.doctype,
 .token.builtin {
-  color: var(--yellow); /* yellow2 */
+  color: var(--sky); /* yellow2 */
 }
 
 .token.entity,

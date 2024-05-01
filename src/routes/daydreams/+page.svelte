@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   padding: 15px 15px 0 15px;
-  max-width: 300px;
+  max-width: 350px;
   border-radius: 10px;
   height: 100%;
   background: linear-gradient(45deg, var(--blue), var(--mauve), var(--pink));

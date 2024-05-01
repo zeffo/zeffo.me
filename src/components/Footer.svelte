@@ -13,8 +13,8 @@
 
         position: fixed;
         bottom: 0;
-
         width: 100%;
+        max-width: 100%;
         padding: 25px 0;
         background-color: var(--crust);
         margin-top: 50px;
