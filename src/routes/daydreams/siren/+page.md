@@ -17,7 +17,7 @@ for researchers to use. As you can imagine, this saves a lot of time that would 
 ## the good part
 
 Turns out that _most_ (note the italics) epapers have a searchbar you can use to search up particular keywords. How dandy!
-The biggest struggle with webscraping epapers is dealing with the data format. 
+This 'solves' the biggest struggle with webscraping epapers: dealing with the data format. 
 Scraping textual data is a bajillion times easier than scraping binary data which _should_ be textual; like images of text. 
 And epapers are exactly that. Thankfully, the publications do store the text in their private little database, and their 
 internal APIs query that database whenever someone uses the search function on the webpage. 
@@ -56,14 +56,13 @@ for i in range(1, pages):
 print(data)
 ```
 
-If you tried to run this code, it probably took about 2 minutes for it to finish.
+If you try to run this code, it will take about 2 minutes for it to finish.
 This is because python code executes sequentially; whenever we make a request, we wait for it to finish before sending the next one.
-This is really terrible for performance, because the time spent in simply _waiting_ for a response from the News Minute servers is time our processor could be
-using for doing other things. 
+This is really terrible for performance, because the time spent in simply _waiting_ for a response from the News Minute servers is precious time our processor could
+use for other things.
 
-This is where we make things **asynchronous**. All that means is we'll be telling our code when it needs to wait for the response;
-so that it can do some other work in the meantime. Our program is currently bottlenecked by the time taken for us to send and receive responses from the remote servers.
-This could also be something like reading from a disk; where the work is not computationally expensive, but rather bound by the time taken for I/O.
+This is where we make things **asynchronous**. All that means is we'll be telling our code when it needs to wait for some I/O to happen, like getting a response from a server,
+so that it can do some other work in the meantime. This could also be something like reading from a disk; where the work is not computationally expensive, but rather bound by the time taken for I/O.
 These kinds of "I/O bound" programs benefit greatly from Cooperative Multitasking, which is the async/await concurrency model. We'll talk more on this later.
 
 To make our code async, we'll first switch from the `requests` package, which executes _synchronously_, to `httpx` (aiohttp is also a great choice).
@@ -132,13 +131,13 @@ bar
 ```
 
 In essence, `await` will suspend the execution of the currently running `awaitable` (like a coroutine) and yield control to the event loop, so that another task may take place.
-Once we've made the initial query, we get the total number of articles. With that information, we know how many queries we need to make; and hence there is no need to make those queries sequentially.
-Instead, we use the [`asyncio.create_task`]() method to schedule execution of the coros. 
+Once we've made the initial query, we get the total number of articles. With that information, we know how many queries we need to make; 
+and hence there is no need to make those queries sequentially (making the nth query doesn't require us to know the result of (n-1)th query).
+Instead, we use the [`asyncio.create_task`](https://docs.python.org/3/library/asyncio-task.html#asyncio.create_task) method to schedule execution of the coros. 
 We maintain a reference to these tasks inside the `tasks` list, which we'll pass to [`asyncio.gather`](https://docs.python.org/3/library/asyncio-task.html#asyncio.gather).
 This will block till all the tasks are done, and all our data has been received.
 Finally, we need to create the event loop and run our `main()` coro; we use the [`asyncio.run`](https://docs.python.org/3/library/asyncio-runner.html#asyncio.run) function for this.
 
-The async version runs  
 
 Lets compare benchmarks:
 
@@ -165,10 +164,12 @@ Well, that's _if_ such an api exists...
 
 Some publications don't have a convenient search bar. Or they do, but it's broken or extremely inaccurate.
 This makes my job significantly harder. We don't have any textual data to work with; we have images.
-Extracting text from images (a process called [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition)) is extremely taxing.
+Extracting text from images (a process called [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition)) is extremely taxing on the cpu.
 Not only does it take a lot of compute power, it also takes a lot of time. This is also in part due to the degree of accuracy needed from the SIREN scrapers;
 we can only use high-resolution images to ensure sufficient precision. OCR is "CPU-bound" work, and async doesn't help here; there's no waiting time, because the CPU is constantly
 crunching numbers. Sad face :(
+In these cases, we use thread-based parallelism, to utilize all our cpu cores and run multiple OCR tasks in parallel. This is very janky in python due to it's [gil](https://en.wikipedia.org/wiki/Global_interpreter_lock).
+But I won't get into that... for now.
 
 ## a note for publications
 You won't believe the things I've seen. The horrors I've witnessed.
