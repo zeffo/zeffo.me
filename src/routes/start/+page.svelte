@@ -92,12 +92,18 @@
     .row {
         display: flex;
         flex-direction: row;
+        max-width: 100%;
+        flex-wrap: wrap;
     }
 
     #Dashboard {
         border: 2px solid var(--lavender);
         border-radius: 10px;
         padding: 30px 100px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0 10px;
     }
 
     #Header {
@@ -194,7 +200,6 @@
             <img id="Icon" src="animals/rocket.jpg" alt="rocket" />
         </div>
         <div id="Topics" class="row">
-            <div class="topic-col col">
                 <div class="topic">
                     <span class="topic-title" style="color: var(--green)"> dev </span>
                     <ul class="topic-links">
@@ -211,8 +216,6 @@
                         {/each}
                     </ul>
                 </div>
-            </div>
-            <div class="topic-col col">
                 <div class="topic">
                     <span class="topic-title" style="color: var(--yellow)"> college </span>
                     <ul class="topic-links">
@@ -229,12 +232,11 @@
                         {/each}
                     </ul>
                 </div>
-            </div>
         </div>
         <div class="row colors">
             {#each colors as color}
                 <span class="catppuccin-color" style="color: var(--{color});">
-                      
+                    ♥&nbsp;    
                 </span> 
             {/each}
         </div>
