@@ -1,6 +1,6 @@
 ---
 title: webscrapers on steroids 
-description: This blog talks about my work at CMHLP-IMHO, and how async I/O has amazing performance benefits for webscraping. 
+description: This blog talks about my work at CMHLP-IMHO, and how we use async python for fast webscraping. 
 date: "2024-05-01"
 categories:
   - python
