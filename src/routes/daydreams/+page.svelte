@@ -37,13 +37,14 @@
   border-radius: 10px;
   height: 100%;
   background: linear-gradient(45deg, var(--blue), var(--mauve), var(--pink));
-  transition: transform 0.3s 
+  background-size: 200%;
+  transition: background 1s 
 }
 .link .post > * {
   color: var(--base);
 }
 .link:hover > .post {
-  transform: scale(1.1) rotate(2deg);
+  background-position: 100%;
 }
 
 .link {
