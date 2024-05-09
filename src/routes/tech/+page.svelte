@@ -38,12 +38,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        transition: transform 0.3s;
+        transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .card:hover {
         text-shadow: none;
         transform: scale(1.18); 
+        box-shadow: 0 0 10px;
     }
 
     .card-title {
@@ -98,7 +99,7 @@
     </p>
     <div class="cards">
         {#each cards as [title, link, desc, color]}
-            <a href={link} target="_blank" rel="noreferrer" class="card" style="border-color: var({color})">
+            <a href={link} target="_blank" rel="noreferrer" class="card" style="border-color: var({color}); color: var({color})">
                 <h1 style="color: var({color})" class="card-title">
                     {title}
                 </h1>
