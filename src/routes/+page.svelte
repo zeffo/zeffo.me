@@ -84,6 +84,7 @@
     #buttons img {
         height: 31px;
         width: 88px;
+        image-rendering: pixelated;
     }
     #buttons img:hover {
         opacity: 0.8;
