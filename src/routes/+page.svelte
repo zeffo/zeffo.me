@@ -6,7 +6,7 @@
     ];
     let buttons = [
         ["https://zeffo.me", "buttons/button.webp"],
-        ["https://mudkip.dev", "https://mudkip.dev/buttons/mudkip.png"],
+        ["https://mudkip.dev", "buttons/mudkip.png"],
         ["https://neovim.io/", "buttons/neovim.gif"],
         ["https://archlinux.org/", "buttons/archlinux.gif"],
         ["https://kernel.org/", "buttons/linux.gif"],
