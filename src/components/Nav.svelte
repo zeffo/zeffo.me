@@ -9,9 +9,10 @@
     import { page } from '$app/stores';
     $: url = $page.url.pathname;
     function toggleTheme() {
-        let theme = (document.body.data_theme == 'dark') ? "light" : "dark";
-        document.body.className = theme;
-        document.body.data_theme = theme;
+        let link = document.getElementById("Theme")
+        let theme = (link.data_theme == 'dark') ? "light" : "dark";
+        link.href = `/themes/${theme}.css`
+        link.data_theme = theme;
     }
 
 </script>
@@ -51,22 +52,10 @@
         color: var(--lavender);
         text-decoration: underline;
     }
-    #ThemeSwitch {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        border-radius: 10px;
-        border: 2px solid var(--mantle);
-        color: var(--subtext0);
-        background-color: var(--surface0);
-    }
 </style>
 
 
 <nav id="Nav">
-    <button id="ThemeSwitch" on:click={toggleTheme}>
-        theme
-    </button>
     <h1 class="nav-brand">
         aman
     </h1>
