@@ -8,13 +8,6 @@
 
     import { page } from '$app/stores';
     $: url = $page.url.pathname;
-    function toggleTheme() {
-        let link = document.getElementById("Theme")
-        let theme = (link.data_theme == 'dark') ? "light" : "dark";
-        link.href = `/themes/${theme}.css`
-        link.data_theme = theme;
-    }
-
 </script>
 
 <style>
