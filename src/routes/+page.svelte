@@ -137,9 +137,9 @@
         </div>
     </div>
     <div id="webring" class="container row">
-        <a href="https://ctp-webr.ing/zeffo/previous">←</a>
+        <a href="https://ctp-webr.ing/zeffo/previous">&lt-</a>
         <a href="https://ctp-webr.ing/">catppuccin webring</a>
-        <a href="https://ctp-webr.ing/zeffo/next">→</a>
+        <a href="https://ctp-webr.ing/zeffo/next">-&gt</a>
     </div>
 
 </div>
