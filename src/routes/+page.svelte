@@ -79,7 +79,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
     #buttons img {
         height: 31px;
@@ -88,6 +88,17 @@
     }
     #buttons img:hover {
         opacity: 0.8;
+    }
+
+    #webring {
+        align-self: center;
+        justify-self: center;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
+    #webring a {
+        text-decoration: none;
+        color: var(--flamingo);
     }
 
 </style>
@@ -124,6 +135,11 @@
                 <a href="{url}"><img src="{image}" alt="button"></a>
             {/each}
         </div>
+    </div>
+    <div id="webring" class="container row">
+        <a href="https://ctp-webr.ing/zeffo/previous">←</a>
+        <a href="https://ctp-webr.ing/">catppuccin webring</a>
+        <a href="https://ctp-webr.ing/zeffo/next">→</a>
     </div>
 
 </div>

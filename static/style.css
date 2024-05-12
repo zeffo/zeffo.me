@@ -52,6 +52,18 @@ p {
   color: var(--subtext0);
 }
 
+.container {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
 .blog {
   h1 {
     color: var(--yellow);
