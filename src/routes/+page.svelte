@@ -126,7 +126,7 @@
         <span class="site-info">
             <strong> Website Stuff: </strong><br>
             {#each site_info as [field, link, title, color]}
-                <span style="color: var({color})">~</span>&nbsp;{field}: <a href={link}>{title}</a><br>
+                <span style="color: var({color})">~</span>&nbsp;{field}: <a href={link}>{title}</a><br />
             {/each}
         </span>
         <br><br><br>
