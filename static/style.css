@@ -20,6 +20,9 @@ body {
 html {
   height: 100%;
   width: 100%;
+  scrollbar-width: none;
+	scrollbar-color: var(--bg-3) transparent;
+	scrollbar-gutter: stable;
 }
 
 body {
@@ -28,9 +31,10 @@ body {
   flex: 1;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 

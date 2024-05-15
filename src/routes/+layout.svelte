@@ -25,13 +25,14 @@
     function getDirection(is_in=true) {
         let [cb, ci, cd] = extract(data.pathname);
         let [pb, pi, pd] = extract(previous[0]);
+        let in_mul = (is_in ? -1 : 1);
         if (cb == pb) {
             let value = 20;
             return {y: `${value}%`};
         } 
-        let value = 20;
+        let value = 7;
         let mul = (ci < pi) ? 1 : -1;
-        value *= (is_in ? -1 : 1);
+        value *= in_mul; 
         return {x: `${value*mul}%`};
         
     }
@@ -49,3 +50,12 @@
 <Footer />
 
 
+<style>
+.transition {
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+</style>
