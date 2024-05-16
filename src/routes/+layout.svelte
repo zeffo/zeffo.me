@@ -38,14 +38,19 @@
     }
     let transition_duration = 150;
     let transition_delay = 200;
+    let enable_transitions = false;
 </script>
 
 <Nav pages={pages}/>
-{#key data.pathname}
-    <div class="transition" in:fly={{ duration: transition_duration, delay: transition_delay, ...getDirection() }} out:fly={{ duration: transition_duration, ...getDirection(false)}}>
-        <slot />
-    </div>
-{/key}
+{#if enable_transitions}
+    {#key data.pathname}
+        <div class="transition" in:fly={{ duration: transition_duration, delay: transition_delay, ...getDirection() }} out:fly={{ duration: transition_duration, ...getDirection(false)}}>
+            <slot />
+        </div>
+    {/key}
+{:else}
+    <slot />
+{/if}
 
 <Footer />
 
