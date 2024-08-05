@@ -114,12 +114,12 @@
         <p style="text-align: left;">
             Hello there! I'm <aman/>. 
             <br><br>
-            I like <highlight>programming</highlight> (especially automation and concurrency). <br>
+            I like programming (especially automation and concurrency). <br>
             You can see my work
             <a href="/tech">here</a>. <br><br>
-            I also like <highlight>rescuing animals</highlight>. You can see some of them
+            I also like rescuing animals. You can see some of them
             <a href="/cats">here</a>.<br><br>
-            You can <highlight>contact me</highlight> on <a href="https://discord.com/users/325616103143505932">discord</a> or send me an
+            You can contact me on <a href="https://discord.com/users/325616103143505932">discord</a> or send me an
             <a href="mailto:aman@zeffo.me">email</a>.
         </p>
         <br><br>

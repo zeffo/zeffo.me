@@ -1,8 +1,9 @@
 <script>
     let links = [
-        ["https://discord.com/users/325616103143505932", "discord", "--teal"],
-        ["https://github.com/zeffo", "github", "--sky"],
-        ["https://www.linkedin.com/in/zeffo", "linkedin", "--sapphire"]
+        ["https://discord.com/users/325616103143505932", "discord", "--green"],
+        ["https://github.com/zeffo", "github", "--teal"],
+        ["https://www.linkedin.com/in/zeffo", "linkedin", "--sky"],
+        ["https://twitter.com/zeffonian", "twitter", "--sapphire"]
     ];
 </script>
 

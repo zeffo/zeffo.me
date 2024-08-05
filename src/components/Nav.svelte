@@ -21,9 +21,23 @@
 
     }
 
+
+    @keyframes gradient-text {
+        to {
+          background-position: 200% center;
+        }
+    }
+
     .nav-brand {
+        /* animation: gradient-text 5s linear infinite;
+        color: transparent;
+        background-clip: text;
+        background-size: 200% auto;
+        background-image: linear-gradient(60deg, var(--pink), var(--pink), var(--flamingo), var(--pink), var(--pink));
+        */
+
+        font-size: 35px; 
         color: var(--pink);
-        font-size: 35px;
         margin-bottom: 10px;
     }
 
