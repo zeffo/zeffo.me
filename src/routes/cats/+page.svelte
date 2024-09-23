@@ -63,8 +63,8 @@
 
 <div class="contents">
     <p class="text-cats">
-        Here are a few of the animals I've helped rescue and rehome ~ <br><br>
-        <span style="color: var(--overlay1)">(i am definitely a cat person)</span>
+         a few of the animals I've rescued and rehomed ~ <br><br>
+        <span style="color: var(--overlay1)">(definitely a cat person)</span>
     </p>
     <div class="icons">
         {#each images as image}

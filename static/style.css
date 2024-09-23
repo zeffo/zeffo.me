@@ -6,6 +6,7 @@
 
 * {
   font-family: "Iosevka Pride", monospace;
+  font-size: 13pt;
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
 }
@@ -21,21 +22,21 @@ html {
   height: 100%;
   width: 100%;
   scrollbar-width: none;
-	scrollbar-color: var(--bg-3) transparent;
-	scrollbar-gutter: stable;
+  scrollbar-color: var(--bg-3) transparent;
+  scrollbar-gutter: stable;
 }
 
 body {
   background-color: var(--base);
   flex-direction: column;
   flex: 1;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .contents {

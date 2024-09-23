@@ -5,9 +5,10 @@
         ['manzar', 'https://github.com/zeffo/manzar', 'a cat that follows your cursor around, written in rust', "--red"],
         ['zeffo.me', 'https://github.com/zeffo/zeffo.me', 'this website, made with svelte and hosted on cf pages', "--yellow"],
         ['hk', 'https://github.com/zeffo/HK', 'star wars themed discord bot that does some cool stuff', "--green"],
-        ['dotfiles', 'https://github.com/zeffo/dotfiles', 'my arch (hyprland) rice dotfiles, screenshots included', "--mauve"],
+        ['dotfiles', 'https://github.com/zeffo/dotfiles', 'i use arch btw (very messy dotfiles)', "--mauve"],
         ['periodico', 'https://www.youtube.com/watch?v=BfJffhaNUBo', 'robot to help newspaper vendors cut down on delivery times', "--blue"],
-        ['webasi', 'https://github.com/zeffo/webasi', 'exhibition website for the art society of india', "--teal"]
+        ['webasi', 'https://github.com/zeffo/webasi', 'exhibition website for the art society of india', "--teal"],
+        ['siren', 'https://github.com/cmhlp/siren', 'webscraper suite for the centre for mental health law & policy', '--sky']
     ]
 
 </script>
@@ -31,8 +32,8 @@
         color: var(--text);
         border: 4px solid;
         border-radius: 10px;
-        width: 250px;
-        height: 120px;
+        max-width: 250px;
+        min-height: 140px;
         text-align: left;
         padding: 20px;
         display: flex;
