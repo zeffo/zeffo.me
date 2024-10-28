@@ -1,7 +1,7 @@
 <script>
 
     let cards = [
-        ['ambilight', 'https://youtu.be/_VMQRKT320A', 'synchronize monitor colors with an ARGB strip in real time', "--peach"],
+        ['glowworm', 'https://youtu.be/_VMQRKT320A', 'bias lighting for wayland via wlr screencopy', "--peach"],
         ['manzar', 'https://github.com/zeffo/manzar', 'a cat that follows your cursor around, written in rust', "--red"],
         ['zeffo.me', 'https://github.com/zeffo/zeffo.me', 'this website, made with svelte and hosted on cf pages', "--yellow"],
         ['hk', 'https://github.com/zeffo/HK', 'star wars themed discord bot that does some cool stuff', "--green"],
