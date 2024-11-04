@@ -32,10 +32,6 @@
         text-shadow: 0 0 4px;
     }
 
-    highlight {
-        color: var(--green)
-    }
-
     .site-info {
         color: var(--subtext1)
     }
@@ -63,11 +59,6 @@
 
     aman::before {
         content: 'Aman';
-    }
-
-    .subtext {
-        color: var(--overlay0);
-        /* font-size: smaller; */
     }
 
     .site-info > a {

@@ -71,17 +71,21 @@ p {
 
 .blog {
   h1 {
-    color: var(--yellow);
+    color: transparent;
+    background-clip: text !important;
+    background: linear-gradient(var(--teal), var(--lavender), var(--mauve));
+    font-size: 21pt;
   }
   a {
-    color: var(--flamingo);
+    color: var(--blue);
   }
   a:hover {
     text-shadow: 0 0 3px;
   }
   h2 {
-    color: var(--peach);
+    color: var(--pink);
     text-decoration: underline;
+    font-size: 17pt;
   }
   code {
     background-color: var(--crust);
@@ -90,6 +94,9 @@ p {
   img {
     object-fit: scale-down;
     max-width: 100%;
+  }
+  .blog-date {
+    color: var(--subtext0);
   }
 }
 
@@ -230,7 +237,7 @@ pre[class*="language-"] {
 .token.tag .punctuation,
 .token.doctype,
 .token.builtin {
-  color: var(--sky); /* yellow2 */
+  color: var(--yellow); /* yellow2 */
 }
 
 .token.entity,

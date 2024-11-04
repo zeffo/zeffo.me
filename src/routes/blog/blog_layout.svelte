@@ -6,20 +6,26 @@
 
 <style>
   .blog {
-    border-left: 1px solid var(--surface1);
+    @media (min-width: 800px) {
+      padding-left: 30px;
+      border-left: 1px solid var(--surface1);
+    }
+    @media (max-width: 800px) {
+      justify-content: center;
+      align-items: center;
+    }
     margin-bottom: 100px;
-    padding-left: 30px;
     display: flex;
     flex-direction: column;
-  }
 
+  }
 
   .wrap {
     @media (max-width: 800px) {
-      max-width: 40ch;
+      max-width: 90vw;
     }
     @media (min-width: 800px) {
-      max-width: 80ch;
+      max-width: 60vw;
     }
   }
 
@@ -32,7 +38,7 @@
 
 <div class="blog">
   <h1>{ title }</h1>
-  <span class="subtext">{ date }</span>
+  <span class="blog-date">{ date }</span>
   <div class="wrap">
     <slot />
   </div>

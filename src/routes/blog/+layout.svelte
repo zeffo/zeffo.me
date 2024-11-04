@@ -6,13 +6,14 @@
     color: transparent;
     padding: 40px;
     background-clip: text;
-    background-image: linear-gradient(45deg, var(--text), var(--lavender), var(--sky), var(--sapphire), var(--teal))
+    background-image: linear-gradient(45deg, var(--sky), var(--sapphire), var(--lavender), var(--mauve), var(--blue));
   }
   .daydreams-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
   }
 
 </style>
@@ -21,6 +22,6 @@
 	<title>aman/daydreams</title>
 </svelte:head>
 <div class="daydreams-wrapper">
-  <div id="daydreams">daydreams ~</div>
+  <!-- <div id="daydreams">daydreams ~</div> -->
   <slot />
 </div>
