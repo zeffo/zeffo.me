@@ -4,11 +4,11 @@
         ['glowworm', 'https://youtu.be/_VMQRKT320A', 'bias lighting for wayland via wlr screencopy', "--peach"],
         ['manzar', 'https://github.com/zeffo/manzar', 'a cat that follows your cursor around, written in rust', "--red"],
         ['zeffo.me', 'https://github.com/zeffo/zeffo.me', 'this website, made with svelte and hosted on cf pages', "--yellow"],
-        ['hk', 'https://github.com/zeffo/HK', 'star wars themed discord bot that does some cool stuff', "--green"],
-        ['dotfiles', 'https://github.com/zeffo/dotfiles', 'i use arch btw (very messy dotfiles)', "--mauve"],
+        ['siren', 'https://github.com/cmhlp/siren', 'webscraper suite for the centre for mental health law & policy', '--green'],
+        ['hk', 'https://github.com/zeffo/HK', 'star wars themed discord bot that does some cool stuff', "--mauve"],
         ['periodico', 'https://www.youtube.com/watch?v=BfJffhaNUBo', 'robot to help newspaper vendors cut down on delivery times', "--blue"],
         ['webasi', 'https://github.com/zeffo/webasi', 'exhibition website for the art society of india', "--teal"],
-        ['siren', 'https://github.com/cmhlp/siren', 'webscraper suite for the centre for mental health law & policy', '--sky']
+        ['dotfiles', 'https://github.com/zeffo/dotfiles', 'i use arch btw (very messy dotfiles)', "--sky"],
     ]
 
 </script>
@@ -39,13 +39,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .card:hover {
         text-shadow: none;
-        transform: scale(1.18); 
-        box-shadow: 0 0 10px;
+        box-shadow: 0 0 40px;
     }
 
     .card-title {
@@ -59,12 +57,8 @@
         font-size: 19px;
     }
 
-    .card > h1 {
-        transition: text-shadow 0.3s;
-    }
-
     .card:hover > h1 {
-        text-shadow: 0 0 5px;
+        text-shadow: 0 0 4px;
     }
 
     .tech-text {
