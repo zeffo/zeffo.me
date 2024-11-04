@@ -11,7 +11,7 @@ const config = {
     mdsvex({
       extensions: [".svelte.md", ".md", ".svx"],
       rehypePlugins: [rehypeSlug],
-      layout: "./src/routes/daydreams/blog_layout.svelte",
+      layout: "./src/routes/blog/blog_layout.svelte",
     }),
   ],
   kit: {

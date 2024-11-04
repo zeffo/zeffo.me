@@ -3,7 +3,7 @@
         ["/", "home"],
         ["/tech", "tech"],
         ["/cats", "cats"],
-        ["/daydreams", "blog"]
+        ["/blog", "blog"]
     ]
 
     import { page } from '$app/stores';
