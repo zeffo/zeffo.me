@@ -1,12 +1,21 @@
 <script>
     let site_info = [
         ["cursor cat", "https://github.com/zeffo/manzar", "manzar", "--red"],
-        ["font", "https://github.com/zeffo/iosevka-pride", "iosevka pride", "--peach"],
-        ["colors", "https://github.com/catppuccin/catppuccin", "catppuccin", "--yellow"],
+        [
+            "font",
+            "https://github.com/zeffo/iosevka-pride",
+            "iosevka pride",
+            "--peach",
+        ],
+        [
+            "colors",
+            "https://github.com/catppuccin/catppuccin",
+            "catppuccin",
+            "--yellow",
+        ],
     ];
     let buttons = [
         ["https://zeffo.me", "buttons/button.webp"],
-        ["https://mudkip.dev", "buttons/mudkip.png"],
         ["https://neovim.io/", "buttons/neovim.gif"],
         ["https://archlinux.org/", "buttons/archlinux.gif"],
         ["https://kernel.org/", "buttons/linux.gif"],
@@ -14,12 +23,57 @@
         ["https://www.mozilla.org/firefox/", "buttons/firefox.png"],
         ["", "buttons/anythingbutchrome.gif"],
         ["", "buttons/passion.gif"],
+        [
+            "https://www.technologyreview.com/2024/05/23/1092777/ai-is-an-energy-hog-this-is-what-it-means-for-climate-change/",
+            "buttons/antiai.png",
+        ],
     ];
-
 </script>
 
-<style>
+<svelte:head>
+    <meta property="og:description" content=":3" />
+    <meta name="theme-color" content="#f5c2e7" />
+    <title>aman/home</title>
+</svelte:head>
 
+<div class="contents">
+    <div class="home-text">
+        <p style="text-align: left;">
+            Hello there! I'm <aman />.
+            <br /><br />
+            I like programming (especially automation and concurrency). <br />
+            You can see my work
+            <a href="/tech">here</a>. <br /><br />
+            I also like rescuing animals. You can see some of them
+            <a href="/cats">here</a>.<br /><br />
+            You can contact me on
+            <a href="https://discord.com/users/325616103143505932">discord</a>
+            or send me an
+            <a href="mailto:aman@zeffo.me">email</a>.
+        </p>
+        <br /><br />
+        <span class="site-info">
+            <strong> Website Stuff: </strong><br />
+            {#each site_info as [field, link, title, color]}
+                <span style="color: var({color})">~</span>&nbsp;{field}:
+                <a href={link}>{title}</a><br />
+            {/each}
+        </span>
+        <br /><br /><br />
+        <div id="buttons" class="container row">
+            {#each buttons as [url, image]}
+                <a href={url}><img src={image} alt="button" /></a>
+            {/each}
+        </div>
+    </div>
+    <div id="webring" class="container row">
+        <a href="https://ctp-webr.ing/zeffo/previous">&lt-</a>
+        <a href="https://ctp-webr.ing/">catppuccin webring</a>
+        <a href="https://ctp-webr.ing/zeffo/next">-&gt</a>
+    </div>
+</div>
+
+<style>
     .home-text {
         text-align: left;
     }
@@ -33,7 +87,7 @@
     }
 
     .site-info {
-        color: var(--subtext1)
+        color: var(--subtext1);
     }
 
     .contents {
@@ -47,9 +101,23 @@
     }
 
     aman {
-        animation: gradient-text 3s linear infinite;     
+        animation: gradient-text 3s linear infinite;
         -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(right, var(--pink), var(--mauve), var(--red), var(--maroon), var(--peach), var(--yellow), var(--green), var(--teal), var(--sky), var(--sapphire), var(--blue), var(--lavender));
+        background: -webkit-linear-gradient(
+            right,
+            var(--pink),
+            var(--mauve),
+            var(--red),
+            var(--maroon),
+            var(--peach),
+            var(--yellow),
+            var(--green),
+            var(--teal),
+            var(--sky),
+            var(--sapphire),
+            var(--blue),
+            var(--lavender)
+        );
         background-clip: text;
         -webkit-background-clip: text;
         background-size: 200% auto;
@@ -58,7 +126,7 @@
     }
 
     aman::before {
-        content: 'Aman';
+        content: "Aman";
     }
 
     .site-info > a {
@@ -91,47 +159,4 @@
         text-decoration: none;
         color: var(--flamingo);
     }
-
 </style>
-
-<svelte:head>
-    <meta property="og:description" content=":3" />
-	<meta name="theme-color" content="#f5c2e7">
-	<title>aman/home</title>
-</svelte:head>
-
-<div class="contents">
-    <div class="home-text">
-        <p style="text-align: left;">
-            Hello there! I'm <aman/>. 
-            <br><br>
-            I like programming (especially automation and concurrency). <br>
-            You can see my work
-            <a href="/tech">here</a>. <br><br>
-            I also like rescuing animals. You can see some of them
-            <a href="/cats">here</a>.<br><br>
-            You can contact me on <a href="https://discord.com/users/325616103143505932">discord</a> or send me an
-            <a href="mailto:aman@zeffo.me">email</a>.
-        </p>
-        <br><br>
-        <span class="site-info">
-            <strong> Website Stuff: </strong><br>
-            {#each site_info as [field, link, title, color]}
-                <span style="color: var({color})">~</span>&nbsp;{field}: <a href={link}>{title}</a><br />
-            {/each}
-        </span>
-        <br><br><br>
-        <div id="buttons" class="container row">
-            {#each buttons as [url, image]}
-                <a href="{url}"><img src="{image}" alt="button"></a>
-            {/each}
-        </div>
-    </div>
-    <div id="webring" class="container row">
-        <a href="https://ctp-webr.ing/zeffo/previous">&lt-</a>
-        <a href="https://ctp-webr.ing/">catppuccin webring</a>
-        <a href="https://ctp-webr.ing/zeffo/next">-&gt</a>
-    </div>
-
-</div>
-
