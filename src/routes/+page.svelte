@@ -158,5 +158,25 @@
     #webring a {
         text-decoration: none;
         color: var(--flamingo);
+        animation: gradient-text 3s linear infinite;
+        -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(
+            right,
+            var(--pink),
+            var(--mauve),
+            var(--red),
+            var(--maroon),
+            var(--peach),
+            var(--yellow),
+            var(--green),
+            var(--teal),
+            var(--sky),
+            var(--sapphire),
+            var(--blue),
+            var(--lavender)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-size: 200% auto;
     }
 </style>
