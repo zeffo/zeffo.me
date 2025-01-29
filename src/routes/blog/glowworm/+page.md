@@ -377,7 +377,7 @@ if let Some(pixels) = state.latest_frame {
 ```
 
 ## 6 months later
-<iframe src="https://www.youtube.com/embed/r1JjI3HKP88" title="glowworm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 65vh; height: 40vh;" allowfullscreen ></iframe>
+<iframe src="https://www.youtube.com/embed/r1JjI3HKP88" title="glowworm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
 
 
 ---

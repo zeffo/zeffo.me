@@ -109,6 +109,20 @@ p {
     color: var(--rosewater);
     opacity: 50%;
   }
+
+  @media(max-width: 800px) {
+    iframe {
+      width: 90vw;
+      height: 30vh; 
+    }
+  }
+  @media(min-width: 800px) {
+    iframe {
+      width: 40vw;
+      height: 40vh;
+    }
+  }
+
 }
 
 :root {
