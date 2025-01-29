@@ -73,7 +73,7 @@ p {
   h1 {
     color: transparent;
     background-clip: text !important;
-    background: linear-gradient(var(--teal), var(--lavender), var(--mauve));
+    background: linear-gradient(60deg, var(--pink), var(--mauve), var(--blue));
     font-size: 21pt;
   }
   a {
@@ -103,6 +103,11 @@ p {
   }
   .blog-date {
     color: var(--subtext0);
+  }
+  blockquote {
+    font-style: italic;
+    color: var(--rosewater);
+    opacity: 50%;
   }
 }
 
@@ -297,8 +302,4 @@ pre[class*="language-"] {
   color: var(--red);
 }
 
-blockquote {
-  font-style: italic;
-  color: var(--rosewater) !important;
-  opacity: 50%;
-}
+

@@ -20,7 +20,7 @@ to light up an addressable rgb strip. I could not have been more wrong.
 
 ## the linux graphics stack
 
-> Warning! This is a long, technical section.
+> -> Warning! This is a long, technical section.
 > Skip to the [end](#6-months-later) to see the demo :)
 
 I used to love acronyms. Now I hate acronyms. If you hate acronyms too, I would recommend you stay far away from anything to do with linux graphics.
