@@ -86,6 +86,12 @@ p {
     color: var(--pink);
     text-decoration: underline;
     font-size: 17pt;
+    text-underline-offset: 2px;
+  }
+  h3 {
+    color: var(--flamingo);
+    text-decoration: var(--surface2) underline;
+    text-underline-offset: 2px;
   }
   code {
     background-color: var(--crust);
@@ -289,4 +295,10 @@ pre[class*="language-"] {
 
 .token.deleted {
   color: var(--red);
+}
+
+blockquote {
+  font-style: italic;
+  color: var(--rosewater) !important;
+  opacity: 50%;
 }

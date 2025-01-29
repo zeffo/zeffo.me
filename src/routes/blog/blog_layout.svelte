@@ -1,8 +1,21 @@
 <script>
-    export let title;
-    export let date;
-    export let description;
+  export let title;
+  export let date;
+  export let description;
 </script>
+
+<svelte:head>
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+</svelte:head>
+
+<div class="blog">
+  <h1>{title}</h1>
+  <span class="blog-date">{date}</span>
+  <div class="wrap">
+    <slot />
+  </div>
+</div>
 
 <style>
   .blog {
@@ -17,7 +30,13 @@
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
+  }
 
+  .blog > h1 {
+    @media (max-width: 800px) {
+      text-align: center;
+      padding: 0 50px;
+    }
   }
 
   .wrap {
@@ -28,18 +47,4 @@
       max-width: 60vw;
     }
   }
-
 </style>
-
-<svelte:head>
-  <meta property="og:title" content="{ title }" />
-  <meta property="og:description" content={ description }/>
-</svelte:head>
-
-<div class="blog">
-  <h1>{ title }</h1>
-  <span class="blog-date">{ date }</span>
-  <div class="wrap">
-    <slot />
-  </div>
-</div>
