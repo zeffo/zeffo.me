@@ -1,12 +1,7 @@
 <script>
     let site_info = [
         ["cursor cat", "https://github.com/zeffo/manzar", "manzar", "--red"],
-        [
-            "font",
-            "https://github.com/zeffo/iosevka-pride",
-            "iosevka pride",
-            "--peach",
-        ],
+        ["source", "https://github.com/zeffo/zeffo.me", "github", "--peach"],
         [
             "colors",
             "https://github.com/catppuccin/catppuccin",

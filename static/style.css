@@ -4,9 +4,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Cozette";
+  src: url("/Cozette.woff2") format("opentype");
+  font-display: swap;
+}
+
 * {
-  font-family: "Iosevka Pride", monospace;
-  font-size: 13pt;
+  font-family: "Cozette";/* , "Iosevka Pride", monospace; */
+  font-size: 15pt;
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
 }
@@ -185,6 +191,11 @@ p {
   }
 }
 
+code, .token, .blog p {
+    font-family: "Iosevka Pride";
+    font-size: 13pt;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: var(--text); /* fg1 / fg */
@@ -224,6 +235,7 @@ pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
+
 }
 
 :not(pre) > code[class*="language-"],
