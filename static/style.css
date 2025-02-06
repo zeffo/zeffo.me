@@ -4,6 +4,7 @@
   font-family: "Cozette";
   src: url("/Cozette.woff2") format("opentype");
   font-display: swap;
+  text-rendering: optimizeLegibility;
 }
 
 * {

@@ -68,7 +68,9 @@
     </p>
     <div class="icons">
         {#each images as image}
-            <img src="{image}" class="icon" alt={image}/>
+            <a href={image} target="_referrer">
+                <img src="{image}" class="icon" alt={image} title={image.split("/")[2].split(".")[0]}/>
+            </a>
         {/each}
     </div>
 </div>
