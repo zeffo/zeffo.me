@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Iosevka Pride";
-  src: url("/font.woff2") format("woff2");
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@350,0..1&display=swap'); 
 
 @font-face {
   font-family: "Cozette";
@@ -192,8 +188,17 @@ p {
 }
 
 code, .token, .blog p {
-    font-family: "Iosevka Pride";
-    font-size: 13pt;
+    font-family: "Recursive";
+}
+
+.blog p {
+  font-size: 12pt;
+  font-variation-settings: "MONO" 0;
+}
+
+code, .token {
+  font-size: 12pt;
+  font-variation-settings: "MONO" 1;
 }
 
 code[class*="language-"],
