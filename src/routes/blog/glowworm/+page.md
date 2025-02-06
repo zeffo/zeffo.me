@@ -21,7 +21,7 @@ to light up an addressable rgb strip. I could not have been more wrong.
 ## the linux graphics stack
 
 > -> Warning! This is a long, technical section.
-> Skip to the [end](#6-months-later) to see the demo :)
+> Skip to the [end](https://www.youtube.com/watch?v=r1JjI3HKP88) to see the demo :)
 
 I used to love acronyms. Now I hate acronyms. If you hate acronyms too, I would recommend you stay far away from anything to do with linux graphics.
 
@@ -377,13 +377,15 @@ if let Some(pixels) = state.latest_frame {
 ```
 
 ## 6 months later
-<iframe src="https://www.youtube.com/embed/r1JjI3HKP88" title="glowworm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+
+
+[probably the most satisfying project i've done till date.](https://www.youtube.com/watch?v=r1JjI3HKP88) 
 
 
 ---
 
 
 <span class='subtext'>
-  this was a long one. thanks for reading :)
+  this was a long one. thanks for reading ♥ 
 </span>
 

@@ -59,7 +59,7 @@
 
 <div class="contents">
     <p class="tech-text">
-        python, rust, linux &lt3 <br />
+        python, rust, linux ♥ <br />
         <a href="./cv2.pdf" target="_blank" class="resume">~ view resume</a>
     </p>
     <div class="cards">
