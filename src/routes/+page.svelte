@@ -36,10 +36,10 @@
         <p style="text-align: left;">
             Hello there! I'm <aman />.
             <br /><br />
-            I like programming (especially automation and concurrency). <br />
+            I like programming and making stuff. <br />
             You can see my work
             <a href="/tech">here</a>. <br /><br />
-            I also like rescuing animals. You can see some of them
+            I also rescue animals. You can see some of them
             <a href="/cats">here</a>.<br /><br />
             You can contact me on
             <a href="https://discord.com/users/325616103143505932">discord</a>

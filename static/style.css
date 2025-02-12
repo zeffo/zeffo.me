@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@350,0..1&display=swap'); 
 
 @font-face {
-  font-family: "Cozette";
-  src: url("/Cozette.woff2") format("opentype");
-  font-display: swap;
-  text-rendering: optimizeLegibility;
+    font-family: 'Iosevka Pride';
+    src: url('font.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
-  font-family: "Cozette";/* , "Iosevka Pride", monospace; */
-  font-size: 15pt;
+  font-family: "Iosevka Pride", monospace;
+  font-size: 13pt;
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
 }
@@ -188,18 +189,13 @@ p {
   }
 }
 
-code, .token, .blog p {
+.blog p {
   font-family: "Recursive";
 }
 
 .blog p {
   font-size: 12pt;
   font-variation-settings: "MONO" 0;
-}
-
-code, .token {
-  font-size: 12pt;
-  font-variation-settings: "MONO" 1;
 }
 
 code[class*="language-"],

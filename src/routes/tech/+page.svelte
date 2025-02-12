@@ -59,7 +59,7 @@
 
 <div class="contents">
     <p class="tech-text">
-        python, rust, linux ♥ <br />
+        python, rust, linux &lt3 <br />
         <a href="./cv2.pdf" target="_blank" class="resume">~ view resume</a>
     </p>
     <div class="cards">
@@ -100,8 +100,8 @@
         color: var(--text);
         border: 4px solid;
         border-radius: 10px;
-        max-width: 250px;
-        min-height: 140px;
+        max-width: 230px;
+        min-height: 120px;
         text-align: left;
         padding: 20px;
         display: flex;
@@ -117,12 +117,12 @@
     .card-title {
         font-size: 30px;
         margin: 0;
-        padding: 0 0 10px;
+        padding: 0;
     }
 
     .card-body {
-        padding-bottom: 20px;
-        font-size: 19px;
+        padding: 0 0 5px;
+        margin: 0;
     }
 
     .card:hover > h1 {
