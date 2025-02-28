@@ -15,13 +15,12 @@
         ["https://archlinux.org/", "buttons/archlinux.gif"],
         ["https://kernel.org/", "buttons/linux.gif"],
         ["https://rust-lang.org/", "buttons/rust.png"],
-        ["https://www.mozilla.org/firefox/", "buttons/firefox.png"],
-        ["", "buttons/anythingbutchrome.gif"],
         ["", "buttons/passion.gif"],
         [
             "https://www.technologyreview.com/2024/05/23/1092777/ai-is-an-energy-hog-this-is-what-it-means-for-climate-change/",
             "buttons/antiai.png",
         ],
+        ["", "buttons/pride.png"]
     ];
 </script>
 
@@ -138,7 +137,10 @@
     #buttons img {
         height: 31px;
         width: 88px;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
         image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
     }
     #buttons img:hover {
         opacity: 0.8;
