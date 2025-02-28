@@ -66,8 +66,6 @@
     });
 </script>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Mono');
-
     .contents {
         display: flex;
         flex-direction: row;
@@ -114,7 +112,7 @@
 
     #Title {
         font-size: 50px;
-        font-family: "Space Mono";
+        font-family: "Recursive Mono";
         color: var(--pink);
         margin: 0;
     }
