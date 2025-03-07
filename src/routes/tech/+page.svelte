@@ -4,13 +4,13 @@
             "glowworm",
             "https://github.com/zeffo/glowworm",
             "bias lighting for wayland with adalight",
-            "--peach",
+            "--red",
         ],
         [
             "manzar",
             "https://github.com/zeffo/manzar",
             "a cat that follows your cursor around",
-            "--red",
+            "--peach",
         ],
         [
             "zeffo.me",
@@ -28,25 +28,7 @@
             "hk",
             "https://github.com/zeffo/HK",
             "star wars themed discord bot that does some cool stuff",
-            "--mauve",
-        ],
-        [
-            "periodico",
-            "https://www.youtube.com/watch?v=BfJffhaNUBo",
-            "robot to help newspaper vendors cut down on delivery times",
             "--blue",
-        ],
-        [
-            "webasi",
-            "https://github.com/zeffo/webasi",
-            "exhibition website for the art society of india",
-            "--teal",
-        ],
-        [
-            "dotfiles",
-            "https://github.com/zeffo/dotfiles",
-            "i use arch btw (very messy dotfiles)",
-            "--sky",
         ],
     ];
 </script>
