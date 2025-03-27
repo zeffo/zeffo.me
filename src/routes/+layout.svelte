@@ -8,7 +8,7 @@
         "/": "home",
         "/tech": "tech",
         "/cats": "cats",
-        "/daydreams": "blog"
+        "/blog": "blog"
     }
 
     let keys = Object.keys(pages);
