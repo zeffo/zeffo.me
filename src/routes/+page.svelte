@@ -1,6 +1,6 @@
 <script>
     let site_info = [
-        ["cursor cat", "https://github.com/zeffo/manzar", "manzar", "-pink"],
+        ["cursor cat", "https://github.com/zeffo/manzar", "manzar", "--pink"],
         ["cat sprites by", "https://aeshanisingh.com/", "aeshani", "--red"],
         ["source", "https://github.com/zeffo/zeffo.me", "github", "--peach"],
         [
