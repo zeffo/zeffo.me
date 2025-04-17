@@ -15,7 +15,7 @@
         [
             "zeffo.me",
             "https://github.com/zeffo/zeffo.me",
-            "this website, made with svelte and hosted on cf pages",
+            "this website, made with svelte + cf pages",
             "--yellow",
         ],
         [
@@ -72,7 +72,7 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 50px;
-        max-width: 1000px;
+        max-width: 1200px;
         padding-bottom: 100px;
     }
 
@@ -82,13 +82,12 @@
         color: var(--text);
         border: 1px solid;
         border-radius: 10px;
-        max-width: 230px;
+        max-width: 270px;
         min-height: 120px;
         text-align: left;
         padding: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         border-color: var(--card-color); 
         color: var(--card-color);
         transition: background linear 0.25s;
@@ -108,6 +107,7 @@
         margin: 0;
         padding: 0;
         color: var(--card-color);
+        margin-bottom: 10px;
     }
 
     .card-body {
