@@ -7,7 +7,7 @@
             "colors",
             "https://github.com/catppuccin/catppuccin",
             "catppuccin",
-            "--yellow",
+            "--mauve",
         ],
     ];
     let buttons = [
@@ -34,7 +34,7 @@
 <div class="contents">
     <div class="home-text">
         <p style="text-align: left;">
-            Hello there! I'm <aman />.
+            Hello there! I'm <aman>Aman</aman>.
             <br /><br />
             I like programming and making stuff. <br />
             You can see my work
@@ -120,9 +120,6 @@
         text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
     }
 
-    aman::before {
-        content: "Aman";
-    }
 
     .site-info > a {
         color: var(--rosewater);

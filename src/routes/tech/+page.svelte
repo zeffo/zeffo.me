@@ -51,9 +51,9 @@
                 target="_blank"
                 rel="noreferrer"
                 class="card"
-                style="border-color: var({color}); color: var({color})"
+                style=" --card-color: var({color});"
             >
-                <h1 style="color: var({color})" class="card-title">
+                <h1 class="card-title">
                     {title}
                 </h1>
                 <span class="card-body">
@@ -89,17 +89,25 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border-color: var(--card-color); 
+        color: var(--card-color);
+        transition: background linear 0.25s;
     }
 
     .card:hover {
-        text-shadow: none;
-        box-shadow: 0 0 40px;
+        background-color: var(--card-color);
+        color: var(--crust);
+    }
+
+    .card:hover > .card-body {
+        color: var(--crust);
     }
 
     .card-title {
         font-size: 30px;
         margin: 0;
         padding: 0;
+        color: var(--card-color);
     }
 
     .card-body {
@@ -107,8 +115,8 @@
         margin: 0;
     }
 
-    .card:hover > h1 {
-        text-shadow: 0 0 4px;
+    .card:hover > .card-title {
+        color: var(--crust);
     }
 
     .tech-text {
