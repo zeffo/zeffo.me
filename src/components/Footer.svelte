@@ -3,7 +3,7 @@
         ["https://discord.com/users/325616103143505932", "discord", "--green"],
         ["https://github.com/zeffo", "github", "--teal"],
         ["https://www.linkedin.com/in/zeffo", "linkedin", "--sky"],
-        ["https://zeffo.bsky.social", "bsky", "--sapphire"]
+        ["https://bsky.app/profile/zeffo.me", "bsky", "--sapphire"]
     ];
 </script>
 
