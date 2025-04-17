@@ -1,27 +1,27 @@
 <script>
     let site_info = [
+        ["source", "https://github.com/zeffo/zeffo.me", "github", "--peach"],
         ["cursor cat", "https://github.com/zeffo/manzar", "manzar", "--pink"],
         ["cat sprites by", "https://aeshanisingh.com/", "aeshani", "--red"],
-        ["source", "https://github.com/zeffo/zeffo.me", "github", "--peach"],
         [
-            "colors",
-            "https://github.com/catppuccin/catppuccin",
-            "catppuccin",
+            "88x31 by",
+            "https://daudix.one/",
+            "daudix",
             "--mauve",
         ],
     ];
     let buttons = [
-        ["https://zeffo.me", "buttons/button.webp"],
+        ["https://zeffo.me", "buttons/zeffo.gif"],
         ["https://neovim.io/", "buttons/neovim.gif"],
+        ["https://daudix.one", "https://daudix.neocities.org/images/buttons/daudix.gif"],
+        ["", "buttons/pride.png"],
         ["https://archlinux.org/", "buttons/archlinux.gif"],
         ["https://kernel.org/", "buttons/linux.gif"],
         ["https://rust-lang.org/", "buttons/rust.png"],
-        ["", "buttons/passion.gif"],
         [
             "https://www.technologyreview.com/2024/05/23/1092777/ai-is-an-energy-hog-this-is-what-it-means-for-climate-change/",
             "buttons/antiai.png",
         ],
-        ["", "buttons/pride.png"]
     ];
 </script>
 
