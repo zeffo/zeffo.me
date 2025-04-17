@@ -134,6 +134,8 @@
         flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 40px;
+        align-items: center;
+        justify-content: center;
     }
     #buttons img {
         height: 31px;
