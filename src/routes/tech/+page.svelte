@@ -80,7 +80,7 @@
         text-decoration: none;
         background-color: var(--mantle);
         color: var(--text);
-        border: 4px solid;
+        border: 1px solid;
         border-radius: 10px;
         max-width: 230px;
         min-height: 120px;
