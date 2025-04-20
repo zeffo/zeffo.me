@@ -50,14 +50,22 @@
     }
 
     .nav-link {
-        font-size: 25px;
-        color: var(--mauve);
+        font-size: 13pt;
+        color: var(--base);
+        background-color: var(--mauve);
         text-decoration: none;
+
+        border-radius: 6px;
+        padding: 0 10px;
+
+        border: 3px solid var(--crust);
+        border-bottom: 5px solid var(--crust);
+
     }
 
     .active {
-        color: var(--lavender);
-        text-decoration: underline;
+        background-color: var(--pink);
+        border-bottom: 3px solid var(--crust);
     }
 </style>
 
