@@ -39,14 +39,11 @@
             I like programming and making stuff. <br />
             You can see my work
             <a href="/tech">here</a>. <br /><br />
-            I also rescue animals. You can see some of them
+            I also rehabilitate injured and sick animals. <br />
+            You can see some of them
             <a href="/cats">here</a>.<br /><br />
-            You can contact me on
-            <a href="https://discord.com/users/325616103143505932">discord</a>
-            or send me an
-            <a href="mailto:aman@zeffo.me">email</a>.
         </p>
-        <br /><br />
+        <!-- <br /><br /> -->
         <span class="site-info">
             <strong> Website Stuff: </strong><br />
             {#each site_info as [field, link, title, color]}
@@ -130,7 +127,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         align-items: center;
         justify-content: center;
     }
@@ -150,7 +147,7 @@
         align-self: center;
         justify-self: center;
         gap: 20px;
-        margin-bottom: 80px;
+        margin-bottom: 70px;
     }
     #webring a {
         text-decoration: none;
