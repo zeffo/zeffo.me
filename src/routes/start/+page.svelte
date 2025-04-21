@@ -95,7 +95,6 @@
     }
 
     #Dashboard {
-        border: 2px solid var(--lavender);
         border-radius: 10px;
         padding: 30px 100px;
         display: flex;
@@ -106,8 +105,8 @@
 
     #Header {
         width: 100%;
-        justify-content: space-between;
         margin-bottom: 50px;
+        gap: 20px;
     }
 
     #Title {
@@ -128,19 +127,6 @@
         width: 100px;
         border: 1px solid var(--lavender);
     }
-
-
-
-    .colors {
-        margin-top: 40px;
-        justify-content: space-between;
-    }
-
-    .catppuccin-color {
-        font-size: 15px;
-    }
-
-
     #Topics {
         /* justify-content: space-between; */
         gap: 100px;
@@ -174,10 +160,6 @@
         text-decoration: underline;
     }
 
-    .topic-col {
-        justify-content: space-between;
-        gap: 20px;
-    }
 
 
 </style>
@@ -191,11 +173,11 @@
 <div class="contents">
     <div id="Dashboard" class="col">
         <div id="Header" class="row">
+            <img id="Icon" src="animals/rocket.webp" alt="rocket" />
             <div class="col">
                 <h1 id="Title"> Welcome ~ </h1>
                 <span id="date"> _ </span>
             </div>
-            <img id="Icon" src="animals/rocket.jpg" alt="rocket" />
         </div>
         <div id="Topics" class="row">
                 <div class="topic">
@@ -231,13 +213,7 @@
                     </ul>
                 </div>
         </div>
-        <div class="row colors">
-            {#each colors as color}
-                <span class="catppuccin-color" style="color: var(--{color});">
-                    ♥&nbsp;    
-                </span> 
-            {/each}
-        </div>
+        <div class="row colors"></div>
     </div>
     <!-- empty divs -->
 </div>
