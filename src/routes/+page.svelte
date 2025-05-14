@@ -60,14 +60,14 @@
     </div>
     <div id="webrings" class="container column">
         <div class="webring" id="ctpwebring" style="margin: 0;">
-            <a href="https://ctp-webr.ing/zeffo/previous">&lt-</a>
+            <a href="https://ctp-webr.ing/zeffo/previous">&lt;-</a>
             <a href="https://ctp-webr.ing/">catppuccin webring</a>
-            <a href="https://ctp-webr.ing/zeffo/next">-&gt</a>
+            <a href="https://ctp-webr.ing/zeffo/next">-&gt;</a>
         </div>
         <div class="webring" id="threetwebring"> 
-            <a href="https://3t1t.neocities.org/zeffo/previous">&lt-</a>
+            <a href="https://3t1t.neocities.org/zeffo/previous">&lt;-</a>
             <a href="https://3t1t.neocities.org/">3t1t webring</a>
-            <a href="https://3t1t.neocities.org/zeffo/next">-&gt</a>
+            <a href="https://3t1t.neocities.org/zeffo/next">-&gt;</a>
         </div>
     </div>
 </div>
