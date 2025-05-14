@@ -58,10 +58,17 @@
             {/each}
         </div>
     </div>
-    <div id="webring" class="container row">
-        <a href="https://ctp-webr.ing/zeffo/previous">&lt-</a>
-        <a href="https://ctp-webr.ing/">catppuccin webring</a>
-        <a href="https://ctp-webr.ing/zeffo/next">-&gt</a>
+    <div id="webrings" class="container column">
+        <div class="webring" id="ctpwebring" style="margin: 0;">
+            <a href="https://ctp-webr.ing/zeffo/previous">&lt-</a>
+            <a href="https://ctp-webr.ing/">catppuccin webring</a>
+            <a href="https://ctp-webr.ing/zeffo/next">-&gt</a>
+        </div>
+        <div class="webring" id="threetwebring"> 
+            <a href="https://3t1t.neocities.org/zeffo/previous">&lt-</a>
+            <a href="https://3t1t.neocities.org/">3t1t webring</a>
+            <a href="https://3t1t.neocities.org/zeffo/next">-&gt</a>
+        </div>
     </div>
 </div>
 
@@ -143,34 +150,42 @@
         opacity: 0.8;
     }
 
-    #webring {
+    #webrings {
         align-self: center;
         justify-self: center;
-        gap: 20px;
         margin-bottom: 70px;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
     }
-    #webring a {
+
+    #ctpwebring {
+        border-radius: 6px;
+        background: linear-gradient(45deg, var(--blue), var(--sky), var(--teal), var(--green));
+    }
+
+    #threetwebring {
+        border-radius: 6px;
+        background: linear-gradient(45deg, var(--mauve), var(--pink), var(--red), var(--peach));
+    }
+
+    .webring {
+        padding: 0 5px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .webring > a {
+        color: var(--crust);
+        margin: 0 5px;
         text-decoration: none;
-        color: var(--flamingo);
-        animation: gradient-text 3s linear infinite;
-        -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(
-            right,
-            var(--pink),
-            var(--mauve),
-            var(--red),
-            var(--maroon),
-            var(--peach),
-            var(--yellow),
-            var(--green),
-            var(--teal),
-            var(--sky),
-            var(--sapphire),
-            var(--blue),
-            var(--lavender)
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-size: 200% auto;
+    }
+
+    .webring > a:hover {
+        text-shadow: none;
     }
 </style>
