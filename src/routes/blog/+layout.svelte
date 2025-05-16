@@ -19,7 +19,7 @@
 </style>
 <svelte:head>
 	<meta name="theme-color" content="#89dceb">
-	<title>aman/daydreams</title>
+	<title>aman/blog</title>
 </svelte:head>
 <div class="daydreams-wrapper">
   <slot />
