@@ -12,8 +12,8 @@
     ];
     let buttons = [
         ["https://zeffo.me", "buttons/zeffo.gif"],
-        ["https://neovim.io/", "buttons/neovim.gif"],
         ["https://daudix.one", "https://daudix.neocities.org/images/buttons/daudix.gif"],
+        ["https://neovim.io/", "buttons/neovim.gif"],
         ["", "buttons/pride.png"],
         ["https://archlinux.org/", "buttons/archlinux.gif"],
         ["https://kernel.org/", "buttons/linux.gif"],
@@ -41,9 +41,8 @@
             <a href="/tech">here</a>. <br /><br />
             I also rehabilitate injured and sick animals. <br />
             You can see some of them
-            <a href="/cats">here</a>.<br /><br />
+            <a href="/cats">here</a>.
         </p>
-        <!-- <br /><br /> -->
         <span class="site-info">
             <strong> Website Stuff: </strong><br />
             {#each site_info as [field, link, title, color]}
@@ -51,15 +50,14 @@
                 <a href={link}>{title}</a><br />
             {/each}
         </span>
-        <br /><br /><br />
-        <div id="buttons" class="container row">
-            {#each buttons as [url, image]}
-                <a href={url}><img src={image} alt="button" /></a>
-            {/each}
-        </div>
+    </div>
+    <div id="buttons" class="container row">
+        {#each buttons as [url, image]}
+            <a href={url}><img src={image} alt="button" /></a>
+        {/each}
     </div>
     <div id="webrings" class="container column">
-        <div class="webring" id="ctpwebring" style="margin: 0;">
+        <div class="webring" id="ctpwebring">
             <a href="https://ctp-webr.ing/zeffo/previous">&lt;-</a>
             <a href="https://ctp-webr.ing/">catppuccin webring</a>
             <a href="https://ctp-webr.ing/zeffo/next">-&gt;</a>
@@ -75,6 +73,7 @@
 <style>
     .home-text {
         text-align: left;
+        align-self: flex-start;
     }
 
     a {
@@ -91,6 +90,7 @@
 
     .contents {
         justify-content: flex-start;
+        gap: 30px;
     }
 
     @keyframes gradient-text {
@@ -134,7 +134,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
-        margin-bottom: 20px;
+        /* margin: 20px 0; */
         align-items: center;
         justify-content: center;
     }

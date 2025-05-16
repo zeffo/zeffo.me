@@ -3,7 +3,7 @@
         ["/", "home"],
         ["/tech", "tech"],
         ["/cats", "cats"],
-        ["/blog", "blog"]
+        ["/blog", "blog"],
     ]
 
     import { page } from '$app/stores';
@@ -46,7 +46,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 2vh;
     }
 
     .nav-link {

@@ -30,14 +30,14 @@
     gap: 30px;
     padding: 30px;
     flex-wrap: wrap;
-    /* max-width: 1000px; */
+    max-width: 900px;
   }
   .post {
-    max-width: 350px;
-    min-height: 170px;
+    max-width: 450px;
+    /* min-height: 100px; */
     display: flex;
     flex-direction: column;
-    padding: 15px 15px 0 15px;
+    padding: 15px;
     border-radius: 10px;
     background: linear-gradient(
       135deg,
