@@ -42,7 +42,8 @@
 <div class="contents">
     <p class="tech-text">
         python, rust, linux &lt3 <br />
-        <a href="./cv2.pdf" target="_blank" class="resume">~ view resume</a>
+        <a href="./cv2.pdf" target="_blank" class="link">resume</a>,
+        <a href="./kit" target="_blank" class="link">kit</a>
     </p>
     <div class="cards">
         {#each cards as [title, link, desc, color]}
@@ -62,9 +63,19 @@
             </a>
         {/each}
     </div>
+    <div id="Kit">
+    </div>
 </div>
 
 <style>
+
+    .link {
+        color: var(--blue);
+    }
+    .link:hover {
+        text-shadow: 0 0 5px;
+    }
+
     .cards {
         display: flex;
         flex-direction: row;
@@ -73,7 +84,6 @@
         flex-wrap: wrap;
         gap: 50px;
         max-width: 1200px;
-        padding-bottom: 100px;
     }
 
     div > .card {
@@ -130,10 +140,5 @@
         gap: 50px;
     }
 
-    .resume {
-        color: var(--blue);
-    }
-    .resume:hover {
-        text-shadow: 0 0 5px;
-    }
+
 </style>
