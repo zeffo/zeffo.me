@@ -18,13 +18,13 @@
         <tr><th>MoBo</th><td>B450-F</td></tr>
         <tr><th>PSU</th><td>thermaltake 650W</td></tr>
         <tr><th>Case</th><td>thermaltake commander c35</td></tr>
-        <tr><hr></tr>
+        <tr>---</tr>
         <tr><th>Keyboard</th><td>Rainy75P Pink w/ Invyr Holy Pandas + RKM75 w/ kalih cocoas</td></tr>
         <tr><th>Mouse</th><td>LAMZU Atlantis Mini CE Pink</td></tr>
         <tr><th>Displays</th><td>gigabyte m27Q 2560x1440@170 + benq 1920X1080@60</td></tr>
         <tr><th>Mic</th><td>blue snowball ice</td></tr>
         <tr><th>Audio</th><td>Sennheiser Momentum 4 + some random jbl speaker</td></tr>
-        <tr><hr></tr>
+        <tr>---</tr>
         <tr><th>OS</th><td>arch btw</td></tr>
         <tr><th>Editor</th><td>neovim</td></tr>
         <tr><th>Terminal</th><td>kitty</td></tr>
@@ -32,7 +32,7 @@
         <tr><th>WM</th><td>hyprland</td></tr>
         <tr><th>Theme</th><td>catppuccin mocha</td></tr>
         <tr><th>Font</th><td>Iosekva Custom Build</td></tr>
-        <tr><hr></tr>
+        <tr>---</tr>
         <tr><th>3D Printer</th><td>BambuLab A1</td></tr>
       </tbody>
     </table>
@@ -48,11 +48,6 @@
 
   .contents {
     justify-content: flex-start;
-  }
-
-  
-  hr {
-    margin: 20px 0;
   }
 
   th {
