@@ -9,12 +9,6 @@
 </script>
 
 <style>
-    p {
-        text-align: center;
-        line-height: 20px;
-        padding: 20px;
-    }
-
     .icons {
         display: flex;
         flex-direction: row;
@@ -43,15 +37,9 @@
     .contents {
         justify-content: flex-start;
         gap: 50px;
-        padding-bottom: 100px;
+        padding: 100px;
     }
 
-    .text-cats {
-        text-align: left;
-        max-width: 800px;
-        margin: 0;
-        padding-bottom: 0;
-    }
 
 </style>
 
@@ -62,10 +50,6 @@
 </svelte:head>
 
 <div class="contents">
-    <p class="text-cats">
-         a few of the animals I've rescued and rehomed ~ <br><br>
-        <span style="color: var(--overlay1)">(definitely a cat person)</span>
-    </p>
     <div class="icons">
         {#each images as image}
             <img src="{image}" class="icon" alt={image} title={image.split("/")[2].split(".")[0]}/>
