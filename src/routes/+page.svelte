@@ -12,6 +12,7 @@
     ];
     let buttons = [
         ["https://zeffo.me", "buttons/zeffo.gif"],
+        ["https://spelis.r.mrharryw.dev/", "https://spelis.r.mrharryw.dev/buttons/spelis88x31.gif"],
         ["https://daudix.one", "https://daudix.neocities.org/images/buttons/daudix.gif"],
         ["https://neovim.io/", "buttons/neovim.gif"],
         ["", "buttons/pride.png"],
@@ -73,7 +74,7 @@
 <style>
     .home-text {
         text-align: left;
-        align-self: flex-start;
+        align-self: start;
     }
 
     a {
@@ -91,6 +92,8 @@
     .contents {
         justify-content: flex-start;
         gap: 30px;
+        align-self: center;
+        justify-self: center;
     }
 
     @keyframes gradient-text {
