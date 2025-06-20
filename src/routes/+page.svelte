@@ -23,7 +23,13 @@
             "https://www.technologyreview.com/2024/05/23/1092777/ai-is-an-energy-hog-this-is-what-it-means-for-climate-change/",
             "buttons/antiai.png",
         ],
+        ["", "buttons/sourcemissing.gif"],
+        ["", "buttons/mobilefriendly.gif"],
+        ["", "buttons/mlp.webp"]
     ];
+    const row_size = 6;
+    const gap = 10;
+    const content_max_width = (row_size * 88) + (gap * (row_size - 1)); 
 </script>
 
 <svelte:head>
@@ -32,7 +38,7 @@
     <title>aman/home</title>
 </svelte:head>
 
-<div class="contents">
+<div class="contents" style="max-width: {content_max_width}px">
     <div class="home-text">
         <p style="text-align: left;">
             Hello there! I'm <aman>Aman</aman>.
@@ -94,6 +100,7 @@
         gap: 30px;
         align-self: center;
         justify-self: center;
+        /* max-width: var(--size); */
     }
 
     @keyframes gradient-text {
@@ -137,10 +144,15 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
-        /* margin: 20px 0; */
         align-items: center;
         justify-content: center;
     }
+
+    #buttons a {
+        height: 31px;
+        width: 88px;
+    }
+
     #buttons img {
         height: 31px;
         width: 88px;
