@@ -13,7 +13,7 @@
     let buttons = [
         ["https://zeffo.me", "buttons/zeffo.gif"],
         ["https://spelis.r.mrharryw.dev/", "https://spelis.r.mrharryw.dev/buttons/spelis88x31.gif"],
-        ["https://daudix.one", "https://daudix.neocities.org/images/buttons/daudix.gif"],
+        ["https://daudix.one", "https://daudix.github.io/images/buttons/daudix.gif"],
         ["https://neovim.io/", "buttons/neovim.gif"],
         ["", "buttons/pride.png"],
         ["https://archlinux.org/", "buttons/archlinux.gif"],
@@ -70,9 +70,9 @@
             <a href="https://ctp-webr.ing/zeffo/next">-&gt;</a>
         </div>
         <div class="webring" id="threetwebring"> 
-            <a href="https://3t1t.neocities.org/zeffo/previous">&lt;-</a>
-            <a href="https://3t1t.neocities.org/">3t1t webring</a>
-            <a href="https://3t1t.neocities.org/zeffo/next">-&gt;</a>
+            <a href="https://3t1t.github.io/zeffo/previous">&lt;-</a>
+            <a href="https://3t1t.github.io/">3t1t webring</a>
+            <a href="https://3t1t.github.io/zeffo/next">-&gt;</a>
         </div>
     </div>
 </div>
