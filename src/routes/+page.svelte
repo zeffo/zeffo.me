@@ -13,7 +13,7 @@
     let buttons = [
         ["https://zeffo.me", "buttons/zeffo.gif"],
         ["https://spelis.r.mrharryw.dev/", "https://spelis.r.mrharryw.dev/buttons/spelis88x31.gif"],
-        ["https://daudix.one", "https://daudix.github.io/images/buttons/daudix.gif"],
+        ["https://daudix.one", "https://daudix.one/home/badges/daudix-neocities.gif"],
         ["https://neovim.io/", "buttons/neovim.gif"],
         ["", "buttons/pride.png"],
         ["https://archlinux.org/", "buttons/archlinux.gif"],
