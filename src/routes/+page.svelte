@@ -69,11 +69,6 @@
             <a href="https://ctp-webr.ing/">catppuccin webring</a>
             <a href="https://ctp-webr.ing/zeffo/next">-&gt;</a>
         </div>
-        <div class="webring" id="threetwebring"> 
-            <a href="https://3t1t.github.io/zeffo/previous">&lt;-</a>
-            <a href="https://3t1t.github.io/">3t1t webring</a>
-            <a href="https://3t1t.github.io/zeffo/next">-&gt;</a>
-        </div>
     </div>
 </div>
 
@@ -179,11 +174,6 @@
     #ctpwebring {
         border-radius: 6px;
         background: linear-gradient(45deg, var(--blue), var(--sky), var(--teal), var(--green));
-    }
-
-    #threetwebring {
-        border-radius: 6px;
-        background: linear-gradient(45deg, var(--mauve), var(--pink), var(--red), var(--peach));
     }
 
     .webring {
