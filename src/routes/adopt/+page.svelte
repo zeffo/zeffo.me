@@ -1,6 +1,19 @@
+
+<script>
+
+const contacts = [
+  ["918408927603", "Alka", "red"],
+  ["918390030197", "Aman", "peach"],
+  ["919822399608", "Nandini", "yellow"],
+  ["917774995276", "Manasi", "green"],
+  ["918010825610", "Abha", "blue"],
+]
+
+</script>
+
 <body>
   <div id="Wrapper" class="container">
-  <div id="Contents" class="container column">
+  <div id="AdoptContents" class="container column">
     <h1>
       ~ adopting a pet
     </h1>
@@ -14,8 +27,9 @@
       </ol>
     You can contact us on whatsapp:
     <div class="container row" id="Contacts">
-      <a href="https://wa.me/918408927603" id="Alka">Alka</a>
-      <a href="https://wa.me/918390030197" id="Aman">Aman</a>
+        {#each contacts as item}
+          <a href="https://wa.me/{item[0]}" style="background-color: var(--{item[2]})">{item[1]}</a>
+        {/each}
     </div>
   </div>
   </div>
@@ -23,7 +37,7 @@
 
 <style>
 
-#Contents {
+#AdoptContents {
   justify-content: center;
   padding: 20px;
 }
@@ -55,17 +69,10 @@ div > a {
   text-decoration: none;
 }
 
-#Alka {
-  background-color: var(--teal);
-}
-
-#Aman {
-  background-color: var(--green);
-}
-
 #Contacts {
   gap: 10px;
   padding: 20px 0;
+  flex-wrap: wrap;
 }
 
 

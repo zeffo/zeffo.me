@@ -41,7 +41,6 @@
     let enable_transitions = false;
 </script>
 
-<div id="ContentWrapper">
     <Nav pages={pages}/>
     {#if enable_transitions}
         {#key data.pathname}
@@ -52,14 +51,10 @@
     {:else}
         <slot />
     {/if}
-</div>
 <Footer />
 
 
 <style>
-#ContentWrapper {
-    padding-bottom: 100px;
-}
 .transition {
 	display: grid;
 	grid-column-start: 1;

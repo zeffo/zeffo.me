@@ -8,3 +8,13 @@ export type Post = {
   categories: Categories[];
   published: boolean;
 };
+
+export type Adoption = {
+  name: string;
+  slug: string;
+  description: string;
+  date: string;
+  published: boolean;
+  images: string[];
+};
+

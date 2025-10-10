@@ -11,7 +11,10 @@ const config = {
     mdsvex({
       extensions: [".svelte.md", ".md", ".svx"],
       rehypePlugins: [rehypeSlug],
-      layout: "./src/routes/blog/blog_layout.svelte",
+      layout: {
+        blog: "./src/routes/blog/blog_layout.svelte",
+        adopt: "./src/routes/adopt/adopt_layout.svelte"
+      }
     }),
   ],
   kit: {
