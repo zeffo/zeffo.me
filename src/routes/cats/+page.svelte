@@ -35,9 +35,9 @@
     }
 
     .contents {
+        padding-top: 30px;
         justify-content: flex-start;
         gap: 50px;
-        padding: 100px;
     }
 
 
