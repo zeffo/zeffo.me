@@ -41,21 +41,25 @@
     let enable_transitions = false;
 </script>
 
-<Nav pages={pages}/>
-{#if enable_transitions}
-    {#key data.pathname}
-        <div class="transition" in:fly={{ duration: transition_duration, delay: transition_delay, ...getDirection() }} out:fly={{ duration: transition_duration, ...getDirection(false)}}>
-            <slot />
-        </div>
-    {/key}
-{:else}
-    <slot />
-{/if}
-
+<div id="ContentWrapper">
+    <Nav pages={pages}/>
+    {#if enable_transitions}
+        {#key data.pathname}
+            <div class="transition" in:fly={{ duration: transition_duration, delay: transition_delay, ...getDirection() }} out:fly={{ duration: transition_duration, ...getDirection(false)}}>
+                <slot />
+            </div>
+        {/key}
+    {:else}
+        <slot />
+    {/if}
+</div>
 <Footer />
 
 
 <style>
+#ContentWrapper {
+    padding-bottom: 100px;
+}
 .transition {
 	display: grid;
 	grid-column-start: 1;
