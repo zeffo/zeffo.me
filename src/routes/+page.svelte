@@ -173,7 +173,7 @@
 
     #ctpwebring {
         border-radius: 6px;
-        background: linear-gradient(45deg, var(--mauve), var(--pink), var(--red), var(--peach));
+        background: linear-gradient(45deg, var(--pink), var(--red), var(--peach));
     }
 
     .webring {
