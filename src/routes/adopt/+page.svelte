@@ -25,7 +25,7 @@ const contacts = [
         <li> Providing a healthy diet </li>
         <li> General wellbeing and safety: walks, grooming, playtime </li>
       </ol>
-    You can contact us on whatsapp:
+    Interested in adoption? Contact us on whatsapp:
     <div class="container row" id="Contacts">
         {#each contacts as item}
           <a href="https://wa.me/{item[0]}" style="background-color: var(--{item[2]})">{item[1]}</a>
