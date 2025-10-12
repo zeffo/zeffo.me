@@ -13,7 +13,8 @@ const config = {
       rehypePlugins: [rehypeSlug],
       layout: {
         blog: "./src/routes/blog/blog_layout.svelte",
-        adopt: "./src/routes/adopt/adopt_layout.svelte"
+        adopt: "./src/routes/adopt/adopt_layout.svelte",
+        cats: "./src/routes/cats/cat_layout.svelte"
       }
     }),
   ],

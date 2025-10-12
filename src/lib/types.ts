@@ -1,4 +1,5 @@
 export type Categories = "sveltekit" | "svelte";
+export type Sex = "male" | "female";
 
 export type Post = {
   title: string;
@@ -18,3 +19,13 @@ export type Adoption = {
   images: string[];
 };
 
+export type Cat = {
+  name: string;
+  coat: string;
+  age: string;
+  description: string;
+  images: string[];
+  records: string[];
+  sex: Sex;
+  thumbnail: string;
+}
