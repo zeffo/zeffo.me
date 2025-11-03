@@ -46,9 +46,7 @@
             I like programming and making stuff. <br />
             You can see my work
             <a href="/tech">here</a>. <br /><br />
-            I also rehabilitate injured and sick animals. <br />
-            You can see some of them
-            <a href="/cats">here</a>.
+            I also like <a href="/cats">rescuing animals</a> and <a href="/dive">diving</a>.
         </p>
         <span class="site-info">
             <strong> Website Stuff: </strong><br />
