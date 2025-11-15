@@ -3,7 +3,7 @@
 let certs = [
   ["Open Water", "09 May 2025"],
   ["Advanced Open Water", "27 Oct 2025"],
-  ["Enriched Air (Nitrox)", "27 Oct 2025"]
+  ["Enriched Air", "27 Oct 2025"]
 ];
 
 </script>
