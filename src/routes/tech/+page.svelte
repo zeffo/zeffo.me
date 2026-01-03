@@ -41,9 +41,9 @@
 
 <div class="contents">
     <p class="tech-text">
-        python, rust, linux &lt3 <br />
-        <a href="./cv.pdf" target="_blank" class="link">resume</a>,
-        <a href="./kit" target="_blank" class="link">kit</a>
+        This page is more appropriately titled "projects", but that doesn't fit in 4 characters.<br />
+        <a href="https://git.zeffo.me/dotfiles" target="_blank" class="link">dotfiles</a>,
+        <a href="./cv.pdf" target="_blank" class="link">resume</a>
     </p>
     <div class="cards">
         {#each cards as [title, link, desc, color]}
