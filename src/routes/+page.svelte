@@ -1,8 +1,8 @@
 <script>
     let site_info = [
         ["source", "https://github.com/zeffo/zeffo.me", "github", "--peach"],
-        ["cursor cat", "https://github.com/zeffo/manzar", "manzar", "--pink"],
-        ["cat sprites by", "https://aeshanisingh.com/", "aeshani", "--red"],
+        ["cursor cat", "https://github.com/zeffo/manzar", "manzar", "--red"],
+        ["cat sprites by", "https://aeshanisingh.com/", "aeshani", "--pink"],
         [
             "88x31 by",
             "https://daudix.one/",
