@@ -41,7 +41,7 @@
 
 <div class="contents">
     <p class="tech-text">
-        This page is more appropriately titled "projects", but that doesn't fit in 4 characters.<br />
+        This page is more appropriately titled "projects", but that doesn't fit in 4 characters.<br /><br />
         <a href="https://git.zeffo.me/dotfiles" target="_blank" class="link">dotfiles</a>,
         <a href="./cv.pdf" target="_blank" class="link">resume</a>
     </p>
