@@ -12,6 +12,7 @@
     ];
     let buttons = [
         ["https://zeffo.me", "buttons/zeffo.gif"],
+        ["https://mooncell07.dev", "buttons/sourcemissing.gif"],
         ["https://spelis.projnull.eu/", "https://spelis.projnull.eu/buttons/spelis88x31.gif"],
         ["https://daudix.one", "https://daudix.one/badges/badges/daudix.gif"],
         ["https://neovim.io/", "buttons/neovim.gif"],
@@ -23,9 +24,8 @@
             "https://www.technologyreview.com/2024/05/23/1092777/ai-is-an-energy-hog-this-is-what-it-means-for-climate-change/",
             "buttons/antiai.png",
         ],
-        ["", "buttons/sourcemissing.gif"],
+        ["", "buttons/darkmode.gif"],
         ["", "buttons/mobilefriendly.gif"],
-        ["", "buttons/mlp.webp"]
     ];
     const row_size = 6;
     const gap = 10;
