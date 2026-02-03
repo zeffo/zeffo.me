@@ -1,14 +1,19 @@
 /* @ts-self-types="./manzar.d.ts" */
 
 /**
+ * @param {string} id
  * @param {string} sprites_path
+ * @param {number} x
+ * @param {number} y
  */
-export function start(sprites_path) {
+export function start(id, sprites_path, x, y) {
     try {
         const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
-        const ptr0 = passStringToWasm0(sprites_path, wasm.__wbindgen_export, wasm.__wbindgen_export2);
+        const ptr0 = passStringToWasm0(id, wasm.__wbindgen_export, wasm.__wbindgen_export2);
         const len0 = WASM_VECTOR_LEN;
-        wasm.start(retptr, ptr0, len0);
+        const ptr1 = passStringToWasm0(sprites_path, wasm.__wbindgen_export, wasm.__wbindgen_export2);
+        const len1 = WASM_VECTOR_LEN;
+        wasm.start(retptr, ptr0, len0, ptr1, len1, x, y);
         var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
         var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
         if (r1) {
