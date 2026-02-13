@@ -67,6 +67,7 @@
         background-color: var(--pink);
         border-bottom: 3px solid var(--crust);
     }
+
 </style>
 
 
@@ -76,9 +77,9 @@
     </h1>
     <div class="nav-links">
         {#each pages as [link, title] }
-            <p>
+            <button>
                 <a href={link} class="nav-link" class:active="{link === '/'+url.split('/')[1]}">{title}</a>
-            </p>
+            </button>
         {/each}
     </div>
 </nav>

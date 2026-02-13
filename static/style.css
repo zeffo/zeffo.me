@@ -43,6 +43,12 @@ body {
   display: none;
 }
 
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
 .contents {
   display: flex;
   flex: 1;
