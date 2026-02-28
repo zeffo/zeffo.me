@@ -12,8 +12,8 @@
     ];
     let buttons = [
         ["https://zeffo.me", "buttons/zeffo.gif"],
-        ["https://mooncell07.dev", "buttons/sourcemissing.gif"],
-        ["https://spelis.projnull.eu/", "https://spelis.projnull.eu/buttons/spelis88x31.gif"],
+        ["https://mooncell07.dev", "https://mooncell07.me/88x31s/mooncell07.gif"],
+        ["https://spelis.projnull.eu/", "buttons/sourcemissing.gif"],
         ["https://daudix.one", "https://daudix.one/badges/badges/daudix.gif"],
         ["https://neovim.io/", "buttons/neovim.gif"],
         ["", "buttons/pride.png"],
