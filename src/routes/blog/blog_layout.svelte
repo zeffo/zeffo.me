@@ -1,4 +1,5 @@
 <script>
+  import "./blog.css";
   export let title;
   export let date;
   export let description;
