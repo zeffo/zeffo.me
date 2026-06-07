@@ -60,7 +60,6 @@
 
         border: 3px solid var(--crust);
         border-bottom: 5px solid var(--crust);
-
     }
 
     .active {
@@ -77,9 +76,7 @@
     </h1>
     <div class="nav-links">
         {#each pages as [link, title] }
-            <button>
-                <a href={link} class="nav-link" class:active="{link === '/'+url.split('/')[1]}">{title}</a>
-            </button>
+            <a href={link} class="nav-link" class:active="{link === '/'+url.split('/')[1]}">{title}</a>
         {/each}
     </div>
 </nav>
