@@ -41,17 +41,16 @@
 <div class="contents" style="max-width: {content_max_width}px">
     <div class="home-text">
         <p style="text-align: left;">
-            Hello there! I'm <aman>Aman</aman>.
+            Hello there! I'm <aman>aman</aman>.
             <br /><br />
-            I like programming and making stuff. <br />
-            You can see my work
-            <a href="/tech">here</a>. <br /><br />
-            I also like <a href="/cats">rescuing animals</a> and <a href="/dive">scuba diving</a>.
+            I like <a href="/tech">programming</a> and <a href="/dive">scuba diving</a>. <br />
+            I also rescue and rehabilitate <a href="/cats">stray animals</a>. 
+
         </p>
         <span class="site-info">
-            <strong> Website Stuff: </strong><br />
+            <strong> website stuff </strong><br />
             {#each site_info as [field, link, title, color]}
-                <span style="color: var({color})">~</span>&nbsp;{field}:
+                <span style="color: var({color})">~</span>&nbsp;{field}
                 <a href={link}>{title}</a><br />
             {/each}
         </span>
