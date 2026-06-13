@@ -17,6 +17,7 @@
   <h1> Divelog </h1>
   <!-- TODO: scrape padi divelog -->
   <!-- TODO: add padi certs -->
+  <img src="./buttons/helm.webp" alt="diver helmet">
   <p>
     I am deeply interested in dive theory, gas physiology and hyperbaric medicine. <br />
     I am rescue certified, and I plan to start tec diving in the next few years. 
